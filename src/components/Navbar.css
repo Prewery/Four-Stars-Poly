@@ -49,3 +49,17 @@
 .button:hover {
   background-color: #0303aa;
 }
+
+.border {
+  width: 185px;
+  height: 1px;
+  background-color: #a6a6a6;
+  margin-left: 20px;
+}
+
+.border2 {
+  width: 80px;
+  height: 1px;
+  background-color: #a6a6a6;
+  margin-left: 20px;
+}

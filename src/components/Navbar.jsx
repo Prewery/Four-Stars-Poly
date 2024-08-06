@@ -84,18 +84,26 @@ const Navbar = () => {
             <KeyboardArrowDown />
           </Box>
           <Menu
-            className="product-menu"
+            // className="product-menu"
             anchorEl={anchorE1}
             open={productOpen}
             onClose={handleClose}
             MenuListProps={{ "aria-labelledby": "basic-button" }}
           >
-            <MenuItem onClick={handleTapesClick}>HDPE/PP Tapes</MenuItem>
-            <MenuItem onClick={handleFabricsClick}>
-              HDPE/PP Woven Fabrics
+            <MenuItem onClick={handleTapesClick}>
+              <Typography fontSize={14}>HDPE/PP Tapes</Typography>
             </MenuItem>
+
+            <div className="border" />
+
+            <MenuItem onClick={handleFabricsClick}>
+              <Typography fontSize={14}>HDPE/PP Woven Fabrics</Typography>
+            </MenuItem>
+
+            <div className="border" />
+
             <MenuItem onClick={handleBagsClick}>
-              BOPP Laminated Woven Bags
+              <Typography fontSize={14}>BOPP Laminated Woven Bags</Typography>
             </MenuItem>
           </Menu>
 
@@ -116,16 +124,26 @@ const Navbar = () => {
           </Box>
           <Menu
             id="about-menu"
-            anchorE1={anchorE2}
+            anchorE2={anchorE2}
             open={aboutOpen}
             onClose={handleClose}
             MenuListProps={{ "aria-labelledby": "basic-button" }}
           >
             <MenuItem onClick={handleSustainabilityClick}>
-              Sustainability
+              <Typography fontSize={14}>Sustainability</Typography>
             </MenuItem>
-            <MenuItem onClick={handleOurTeamClick}>Our Team</MenuItem>
-            <MenuItem onClick={handleAboutUsClick}>About Us</MenuItem>
+
+            <div className="border2" />
+
+            <MenuItem onClick={handleOurTeamClick}>
+              <Typography fontSize={14}>Our Team</Typography>
+            </MenuItem>
+
+            <div className="border2" />
+
+            <MenuItem onClick={handleAboutUsClick}>
+              <Typography fontSize={14}>About Us</Typography>
+            </MenuItem>
           </Menu>
         </Box>
 
