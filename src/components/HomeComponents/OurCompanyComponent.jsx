@@ -1,16 +1,19 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 import SliderComponent from "./SliderComponent";
 import Banner from "./Banner";
 
 const OurCompanyComponent = () => {
+  const isMobile = useMediaQuery("(max-width:600px");
+
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: !isMobile ? "center" : "",
         justifyContent: "center",
         margin: "70px 0",
       }}
@@ -18,14 +21,21 @@ const OurCompanyComponent = () => {
       {/* text and slider */}
       <Box
         sx={{
-          width: "1200px",
+          width: !isMobile ? "1200px" : "",
           height: "375px",
           display: "flex",
+          flexDirection: isMobile ? "column" : "row",
           gap: "20px",
         }}
       >
         {/* left side content */}
-        <Box sx={{ width: "426px", height: "375px", padding: "20px" }}>
+        <Box
+          sx={{
+            width: !isMobile ? "426px" : "330px",
+            height: "375px",
+            padding: "20px",
+          }}
+        >
           <Box
             sx={{
               width: "83px",
@@ -62,7 +72,7 @@ const OurCompanyComponent = () => {
         {/* right side content */}
         <Box
           sx={{
-            width: "655px",
+            width: !isMobile ? "655px" : "330px",
             height: "375px",
             padding: "20px",
           }}

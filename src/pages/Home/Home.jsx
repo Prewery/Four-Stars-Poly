@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import "./home.css";
 import CarouselComponent from "../../components/HomeComponents/CarouselComponent";
 import OurCompanyComponent from "../../components/HomeComponents/OurCompanyComponent";
+import WhyChooseUsComponent from "../../components/HomeComponents/WhyChooseUsComponent";
 
 const Home = () => {
   return (
@@ -13,6 +14,9 @@ const Home = () => {
 
       {/* our company component */}
       <OurCompanyComponent />
+
+      {/* why choose us component */}
+      <WhyChooseUsComponent />
     </Box>
   );
 };

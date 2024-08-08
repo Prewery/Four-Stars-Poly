@@ -1,20 +1,32 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 const Banner = () => {
+  const isMobile = useMediaQuery("(max-width:600px");
+
   return (
     <Box
       sx={{
         width: "100%",
-        height: "230px",
+        height: !isMobile ? "230px" : "470px",
         backgroundColor: "#DBAB3C",
-        marginTop: "70px",
         display: "flex",
-        alignItems: "center",
+        alignItems: !isMobile ? "center" : "",
         justifyContent: "center",
+        marginTop: isMobile ? "450px" : "70px",
+        padding: isMobile ? "30px" : "",
       }}
     >
-      <Box sx={{ width: "1040px", height: "126px", display: "flex" }}>
+      <Box
+        sx={{
+          width: !isMobile ? "1040px" : "330px",
+          height: "126px",
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          gap: isMobile ? "10px" : "",
+        }}
+      >
         {/* 1st container */}
         <Box
           sx={{
@@ -103,7 +115,9 @@ const Banner = () => {
           >
             Production Capacity
           </Typography>
-          <Typography textAlign={"center"}>per annum</Typography>
+          <Typography textAlign={"center"} marginBottom={3}>
+            per annum
+          </Typography>
         </Box>
 
         {/* 4rth container */}
@@ -132,7 +146,7 @@ const Banner = () => {
           >
             Client Served
           </Typography>
-          <Typography textAlign={"center"}>
+          <Typography textAlign={"center"} marginBottom={3}>
             Spread across all continents
           </Typography>
         </Box>
