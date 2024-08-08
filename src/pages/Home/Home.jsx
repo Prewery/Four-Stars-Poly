@@ -5,6 +5,7 @@ import "./home.css";
 import CarouselComponent from "../../components/HomeComponents/CarouselComponent";
 import OurCompanyComponent from "../../components/HomeComponents/OurCompanyComponent";
 import WhyChooseUsComponent from "../../components/HomeComponents/WhyChooseUsComponent";
+import WhatWeOfferComponent from "../../components/HomeComponents/WhatWeOfferComponent";
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
 
       {/* why choose us component */}
       <WhyChooseUsComponent />
+
+      {/* what we offer component */}
+      <WhatWeOfferComponent />
     </Box>
   );
 };

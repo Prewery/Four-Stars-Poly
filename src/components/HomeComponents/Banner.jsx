@@ -8,14 +8,14 @@ const Banner = () => {
   return (
     <Box
       sx={{
-        width: "100%",
+        width: !isMobile ? "100%" : "null",
         height: !isMobile ? "230px" : "470px",
         backgroundColor: "#DBAB3C",
         display: "flex",
         alignItems: !isMobile ? "center" : "",
         justifyContent: "center",
         marginTop: isMobile ? "450px" : "70px",
-        padding: isMobile ? "30px" : "",
+        padding: isMobile ? "30px 80px" : "",
       }}
     >
       <Box

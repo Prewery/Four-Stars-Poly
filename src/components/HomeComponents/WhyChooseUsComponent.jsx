@@ -44,7 +44,7 @@ const WhyChooseUsComponent = () => {
           flexDirection: !isMobile ? "row" : "column",
           justifyContent: "center",
           margin: "70px",
-          gap: isMobile ? "20px" : "",
+          gap: "20px",
         }}
       >
         {/* box 1 */}
@@ -52,7 +52,6 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            marginLeft: "20px",
             boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
@@ -79,7 +78,6 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            marginLeft: "20px",
             boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
@@ -111,7 +109,6 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            marginLeft: "20px",
             boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
@@ -143,7 +140,6 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            marginLeft: "20px",
             boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
