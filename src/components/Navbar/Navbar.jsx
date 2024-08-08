@@ -18,8 +18,8 @@ import {
   Menu as MenuIcon,
 } from "@mui/icons-material";
 
-import Logo from "../assets/Images/logo.png";
-import "./NavbarStyle/Navbar.css";
+import Logo from "../../assets/Images/logo.png";
+import "./Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
