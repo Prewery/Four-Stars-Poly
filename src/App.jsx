@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Infrastructure from "./pages/Infrastructure";
-import QualityAssurance from "./pages/QualityAssurance";
+import Home from "./pages/Home/Home";
+import Infrastructure from "./pages/Infrastructure/Infrastructure";
+import QualityAssurance from "./pages/QualityAssurance/QualityAssurance";
 import HdpeTapes from "./pages/Products/HdpeTapes";
 import WovenFabrics from "./pages/Products/WovenFabrics";
 import WovenBags from "./pages/Products/WovenBags";
