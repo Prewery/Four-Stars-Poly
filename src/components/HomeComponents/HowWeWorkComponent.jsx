@@ -12,8 +12,8 @@ const HowWeWorkComponent = () => {
   const sliderSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: isMobile ? 1 : 4,
+    slidesToScroll: isMobile ? 1 : 2,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,

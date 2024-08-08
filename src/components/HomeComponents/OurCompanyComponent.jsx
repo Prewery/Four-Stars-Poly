@@ -12,8 +12,8 @@ const OurCompanyComponent = () => {
   const sliderSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2.1,
-    slidesToScroll: 2,
+    slidesToShow: isMobile ? 1 : 2.1,
+    slidesToScroll: isMobile ? 1 : 2,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,

@@ -9,6 +9,10 @@ import SliderPic7 from "../assets/Images/SliderPic7.png";
 import SliderPic8 from "../assets/Images/SliderPic8.png";
 import SliderPic9 from "../assets/Images/SliderPic9.png";
 
+import AvatarImage1 from "../assets/Images/Avatar1.png";
+import AvatarImage2 from "../assets/Images/Avatar2.png";
+import AvatarImage3 from "../assets/Images/Avatar3.png";
+
 export const sliderItem = [
   {
     img: SliderPic1,
@@ -39,5 +43,29 @@ export const sliderItem2 = [
   },
   {
     img: SliderPic9,
+  },
+];
+
+export const sliderItem3 = [
+  {
+    description:
+      "“The team at Four Stars Poly is fantastic. Their advanced manufacturing processes and stringent quality controls ensure that every product meets high standards.”",
+    name: "Emily",
+    country: "Canada",
+    img: AvatarImage1,
+  },
+  {
+    description:
+      "“The team at Four Stars Poly is fantastic. Their advanced manufacturing processes and stringent quality controls ensure that every product meets high standards.”",
+    name: "Emily",
+    country: "India",
+    img: AvatarImage2,
+  },
+  {
+    description:
+      "“The team at Four Stars Poly is fantastic. Their advanced manufacturing processes and stringent quality controls ensure that every product meets high standards.”",
+    name: "Emily",
+    country: "Australia",
+    img: AvatarImage3,
   },
 ];

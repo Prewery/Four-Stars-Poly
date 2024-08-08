@@ -1,12 +1,12 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-import "./home.css";
 import CarouselComponent from "../../components/HomeComponents/CarouselComponent";
 import OurCompanyComponent from "../../components/HomeComponents/OurCompanyComponent";
 import WhyChooseUsComponent from "../../components/HomeComponents/WhyChooseUsComponent";
 import WhatWeOfferComponent from "../../components/HomeComponents/WhatWeOfferComponent";
 import HowWeWorkComponent from "../../components/HomeComponents/HowWeWorkComponent";
+import WhatAreClientSaysComponent from "../../components/HomeComponents/WhatAreClientSaysComponent";
 
 const Home = () => {
   return (
@@ -25,6 +25,9 @@ const Home = () => {
 
       {/* how we work component */}
       <HowWeWorkComponent />
+
+      {/* what are client says component */}
+      <WhatAreClientSaysComponent />
     </Box>
   );
 };
