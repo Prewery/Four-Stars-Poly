@@ -56,7 +56,20 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  /* button {
     background-color: #f9f9f9;
-  }
+  } */
+}
+
+.button {
+  width: 118px;
+  height: 36px;
+  background-color: #000080;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #0303aa;
 }
