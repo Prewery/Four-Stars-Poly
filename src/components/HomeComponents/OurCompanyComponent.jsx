@@ -36,6 +36,7 @@ const OurCompanyComponent = () => {
             padding: "20px",
           }}
         >
+          {/* rectangle box design */}
           <Box
             sx={{
               width: "83px",
