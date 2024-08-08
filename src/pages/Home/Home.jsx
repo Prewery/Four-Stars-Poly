@@ -6,6 +6,7 @@ import CarouselComponent from "../../components/HomeComponents/CarouselComponent
 import OurCompanyComponent from "../../components/HomeComponents/OurCompanyComponent";
 import WhyChooseUsComponent from "../../components/HomeComponents/WhyChooseUsComponent";
 import WhatWeOfferComponent from "../../components/HomeComponents/WhatWeOfferComponent";
+import HowWeWorkComponent from "../../components/HomeComponents/HowWeWorkComponent";
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
 
       {/* what we offer component */}
       <WhatWeOfferComponent />
+
+      {/* how we work component */}
+      <HowWeWorkComponent />
     </Box>
   );
 };

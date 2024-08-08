@@ -5,20 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-import { sliderItem } from "../../utils/SliderItem";
-
-const SliderComponent = () => {
+const SliderComponent = ({ sliderItem, settings, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
-
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2.1,
-    slidesToScroll: 2,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
 
   return (
     <Box mt={5} mb={7}>
@@ -36,6 +24,7 @@ const SliderComponent = () => {
                 backgroundColor: "#FFF5E1",
                 bottom: -415,
                 left: 635,
+                zIndex: "-1",
               }}
             />
 
@@ -48,6 +37,7 @@ const SliderComponent = () => {
                 backgroundColor: "#FFF5E1",
                 bottom: -415,
                 left: 610,
+                zIndex: "-1",
               }}
             />
           </div>
@@ -61,8 +51,9 @@ const SliderComponent = () => {
                 width: "63px",
                 height: "63px",
                 backgroundColor: "#FFF5E1",
-                bottom: -135,
+                bottom: -145,
                 left: 1270,
+                zIndex: "-1",
               }}
             />
 
@@ -73,8 +64,9 @@ const SliderComponent = () => {
                 width: "19px",
                 height: "19px",
                 backgroundColor: "#FFF5E1",
-                bottom: -81,
+                bottom: -91,
                 left: 1330,
+                zIndex: "-1",
               }}
             />
           </div>
@@ -82,19 +74,22 @@ const SliderComponent = () => {
       ) : null}
 
       {/* slider */}
-      <Slider {...settings}>
-        {sliderItem.map((item) => (
-          <div key={item.title}>
-            <img
-              src={item.img}
-              alt={item.title}
-              style={{ width: "307px", height: "260px" }}
-            />
-            <h3 style={{ color: "white" }}>{item.title}</h3>
-            <p style={{ color: "white" }}>{item.description}</p>
-          </div>
-        ))}
-      </Slider>
+      <Box sx={{ padding: "35px" }}>
+        <Slider {...settings}>
+          {sliderItem.map((item) => (
+            <div key={item.title}>
+              <img
+                src={item.img}
+                alt={item.title}
+                style={{
+                  width: style ? "257px" : "307px",
+                  height: style ? "187px" : "260px",
+                }}
+              />
+            </div>
+          ))}
+        </Slider>
+      </Box>
     </Box>
   );
 };

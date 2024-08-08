@@ -4,9 +4,20 @@ import { useMediaQuery } from "@mui/material";
 
 import SliderComponent from "./SliderComponent";
 import Banner from "./Banner";
+import { sliderItem } from "../../utils/SliderItem";
 
 const OurCompanyComponent = () => {
   const isMobile = useMediaQuery("(max-width:600px");
+
+  const sliderSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2.1,
+    slidesToScroll: 2,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
   return (
     <Box
@@ -75,11 +86,10 @@ const OurCompanyComponent = () => {
           sx={{
             width: !isMobile ? "655px" : "330px",
             height: "375px",
-            padding: "20px",
           }}
         >
           {/* slider component */}
-          <SliderComponent />
+          <SliderComponent sliderItem={sliderItem} settings={sliderSettings} />
         </Box>
       </Box>
 
