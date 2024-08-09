@@ -1,44 +1,66 @@
 import React from "react";
-import { Box, MenuItem, Select, Typography } from "@mui/material";
+import { Box, MenuItem, Select, TextField, Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 import BackgroundImage from "../../assets/Images/pic5.png";
 
 const GetInTouchWithUsComponent = () => {
+  const isMobile = useMediaQuery("(max-width:600px");
+
   return (
     <Box
       sx={{
         marginTop: "70px",
         marginBottom: "70px",
         width: "100%",
-        height: "877px",
-        backgroundImage: `url(${BackgroundImage})`,
+        height: !isMobile ? "877px" : "1200px",
+        backgroundImage: `url(${BackgroundImage})`, // background image
         backgroundSize: "cover",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
+      {/* linear gradient effect */}
+      {!isMobile ? (
+        <Box
+          sx={{
+            position: "absolute",
+            top: "4040px",
+            left: 0,
+            width: "100%",
+            height: "877px",
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 40%)",
+          }}
+        />
+      ) : null}
+
+      {/* main container */}
       <Box
         sx={{
-          width: "695px",
-          height: "693px",
+          width: !isMobile ? "695px" : "300px",
+          height: !isMobile ? "693px" : "1000px",
           background: "white",
           borderRadius: "4px",
           padding: "20px",
+          position: "relative",
         }}
       >
         {/* title */}
-        <Typography
-          textAlign={"center"}
-          fontSize={24}
-          fontWeight={700}
-          color={"#000080"}
-        >
-          Get In Touch With Us
-        </Typography>
+        <Box>
+          <Typography
+            textAlign={"center"}
+            fontSize={24}
+            fontWeight={700}
+            color={"#000080"}
+          >
+            Get In Touch With Us
+          </Typography>
+        </Box>
 
         {/* form */}
-        <Box mt={2} p={"10px"}>
+        <Box mt={2} p={"10px"} component={"form"}>
           {/* name */}
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <label
@@ -62,13 +84,19 @@ const GetInTouchWithUsComponent = () => {
           </Box>
 
           {/* email and contact number */}
-          <Box sx={{ display: "flex", gap: "30px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+              gap: "30px",
+              marginTop: "30px",
+            }}
+          >
             {/* email */}
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "30px",
               }}
             >
               <label
@@ -83,7 +111,7 @@ const GetInTouchWithUsComponent = () => {
                 placeholder="Enter your Email Address"
                 style={{
                   height: "38px",
-                  width: "357px",
+                  width: !isMobile ? "357px" : "",
                   borderRadius: "2px",
                   border: "none",
                   backgroundColor: "#F5F6F7",
@@ -97,7 +125,6 @@ const GetInTouchWithUsComponent = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "30px",
               }}
             >
               <label
@@ -112,7 +139,7 @@ const GetInTouchWithUsComponent = () => {
                 placeholder="eg. 9876054786"
                 style={{
                   height: "38px",
-                  width: "244px",
+                  width: !isMobile ? "244px" : "",
                   borderRadius: "2px",
                   border: "none",
                   backgroundColor: "#F5F6F7",
@@ -123,13 +150,19 @@ const GetInTouchWithUsComponent = () => {
           </Box>
 
           {/* company name and country */}
-          <Box sx={{ display: "flex", gap: "30px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+              gap: "30px",
+              marginTop: "20px",
+            }}
+          >
             {/* company name */}
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "30px",
               }}
             >
               <label
@@ -144,7 +177,7 @@ const GetInTouchWithUsComponent = () => {
                 placeholder="Enter your Company Name"
                 style={{
                   height: "38px",
-                  width: "357px",
+                  width: !isMobile ? "357px" : "",
                   borderRadius: "2px",
                   border: "none",
                   backgroundColor: "#F5F6F7",
@@ -158,7 +191,6 @@ const GetInTouchWithUsComponent = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "30px",
               }}
             >
               <label
@@ -173,7 +205,7 @@ const GetInTouchWithUsComponent = () => {
                 displayEmpty
                 style={{
                   height: "38px",
-                  width: "265px",
+                  width: !isMobile ? "265px" : "",
                   borderRadius: "2px",
                   border: "none",
                   backgroundColor: "#F5F6F7",
@@ -190,50 +222,27 @@ const GetInTouchWithUsComponent = () => {
             </Box>
           </Box>
 
-          {/* company name and country */}
-          <Box sx={{ display: "flex", gap: "30px" }}>
+          {/* general query and subject */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+              gap: "30px",
+              marginTop: "20px",
+            }}
+          >
             {/* general query */}
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "30px",
               }}
             >
               <label
-                htmlFor="company-name"
+                htmlFor="general-query"
                 style={{ fontWeight: "700px", fontSize: "18px" }}
               >
-                Company name<span style={{ color: "#FF0000" }}>*</span>
-              </label>
-              <input
-                id="company-name"
-                type="text"
-                placeholder="Enter your Company Name"
-                style={{
-                  height: "38px",
-                  width: "357px",
-                  borderRadius: "2px",
-                  border: "none",
-                  backgroundColor: "#F5F6F7",
-                  paddingLeft: "20px",
-                }}
-              />
-            </Box>
-
-            {/* subject */}
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                marginTop: "30px",
-              }}
-            >
-              <label
-                htmlFor="country"
-                style={{ fontWeight: "700px", fontSize: "18px" }}
-              >
-                Country<span style={{ color: "#FF0000" }}>*</span>
+                General Query<span style={{ color: "#FF0000" }}>*</span>
               </label>
               <Select
                 id="country"
@@ -241,7 +250,7 @@ const GetInTouchWithUsComponent = () => {
                 displayEmpty
                 style={{
                   height: "38px",
-                  width: "265px",
+                  width: !isMobile ? "380px" : "",
                   borderRadius: "2px",
                   border: "none",
                   backgroundColor: "#F5F6F7",
@@ -249,13 +258,78 @@ const GetInTouchWithUsComponent = () => {
                 }}
               >
                 <MenuItem value="" disabled>
-                  Select your Country
+                  Select your Products
                 </MenuItem>
-                <MenuItem value="india">India</MenuItem>
-                <MenuItem value="usa">USA</MenuItem>
-                <MenuItem value="uk">UK</MenuItem>
+                <MenuItem value="hdpe-tapes">Hdpe Tapes</MenuItem>
+                <MenuItem value="woven-bags">Woven Bags</MenuItem>
+                <MenuItem value="woven-fabrics">Woven Fabrics</MenuItem>
               </Select>
             </Box>
+
+            {/* subject */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <label
+                htmlFor="subject"
+                style={{ fontWeight: "700px", fontSize: "18px" }}
+              >
+                Subject<span style={{ color: "#FF0000" }}>*</span>
+              </label>
+              <input
+                id="subject"
+                type="text"
+                placeholder="Enter Query Subject"
+                style={{
+                  height: "38px",
+                  width: !isMobile ? "240px" : "",
+                  borderRadius: "2px",
+                  border: "none",
+                  backgroundColor: "#F5F6F7",
+                  paddingLeft: "20px",
+                }}
+              />
+            </Box>
+          </Box>
+
+          {/* message */}
+          <Box
+            sx={{ display: "flex", flexDirection: "column", marginTop: "20px" }}
+          >
+            <label
+              htmlFor="message"
+              style={{ fontWeight: "700px", fontSize: "18px" }}
+            >
+              Message<span style={{ color: "#FF0000" }}>*</span>
+            </label>
+
+            <TextField
+              id="outlined-multiline-static"
+              label="Type your Query message here..."
+              multiline
+              rows={4}
+              sx={{
+                borderRadius: "2px",
+                border: "none",
+                backgroundColor: "#F5F6F7",
+              }}
+            />
+          </Box>
+
+          {/* submit button */}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "30px",
+            }}
+          >
+            <button type="submit" className="button">
+              Submit
+            </button>
           </Box>
         </Box>
       </Box>

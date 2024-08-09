@@ -84,6 +84,7 @@ const Navbar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar variant="dense" className="navbar">
+          {/* mobile icon button */}
           <IconButton
             color="black"
             aria-label="open drawer"
@@ -112,8 +113,10 @@ const Navbar = () => {
               <KeyboardArrowDown />
             </Box>
             <Menu
+              id="product-menu"
               anchorEl={anchorE1}
               open={productOpen}
+              // open={Boolean(anchorE1) && anchorE1.id === "product-menu"}
               onClose={handleClose}
               MenuListProps={{ "aria-labelledby": "basic-button" }}
             >
@@ -150,8 +153,10 @@ const Navbar = () => {
               <KeyboardArrowDown />
             </Box>
             <Menu
-              anchorE2={anchorE2}
+              id="about-menu"
+              anchorE1={anchorE1}
               open={aboutOpen}
+              // open={Boolean(anchorE1) && anchorE1.id === "about-menu"}
               onClose={handleClose}
               MenuListProps={{ "aria-labelledby": "basic-button" }}
             >
