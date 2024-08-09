@@ -5,12 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const SliderComponent = ({ sliderItem, settings, style, theme }) => {
+const SliderComponent = ({ sliderItem, settings, style, theme, pics }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
     <Box mt={5} mb={7}>
       {/* box design */}
+
       {!isMobile ? (
         <div>
           {/* left side */}

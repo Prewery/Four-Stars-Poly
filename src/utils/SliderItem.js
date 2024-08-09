@@ -3,11 +3,12 @@ import SliderPic2 from "../assets/Images/SliderPic2.png";
 import SliderPic3 from "../assets/Images/SliderPic3.png";
 import SliderPic4 from "../assets/Images/SliderPic4.png";
 import SliderPic5 from "../assets/Images/SliderPic5.png";
-
 import SliderPic6 from "../assets/Images/SliderPic6.png";
 import SliderPic7 from "../assets/Images/SliderPic7.png";
 import SliderPic8 from "../assets/Images/SliderPic8.png";
 import SliderPic9 from "../assets/Images/SliderPic9.png";
+import SliderPic10 from "../assets/Images/SliderPic10.png";
+import SliderPic11 from "../assets/Images/SliderPic11.png";
 
 import AvatarImage1 from "../assets/Images/Avatar1.png";
 import AvatarImage2 from "../assets/Images/Avatar2.png";
@@ -67,5 +68,20 @@ export const sliderItem3 = [
     name: "Emily",
     country: "Australia",
     img: AvatarImage3,
+  },
+];
+
+export const sliderItem4 = [
+  {
+    img: SliderPic10,
+  },
+  {
+    img: SliderPic11,
+  },
+  {
+    img: SliderPic10,
+  },
+  {
+    img: SliderPic11,
   },
 ];

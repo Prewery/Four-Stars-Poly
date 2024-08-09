@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const IntroductionComponent = ({ items }) => {
+const IntroductionComponent = ({ items, pics }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -37,7 +37,7 @@ const IntroductionComponent = ({ items }) => {
           fontSize={24}
           color={"#000080"}
         >
-          Introduction
+          {items[0].title}
         </Typography>
       </Box>
 
@@ -57,40 +57,42 @@ const IntroductionComponent = ({ items }) => {
           </Typography>
 
           {/* pics */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: isMobile ? "column" : "row",
-              marginTop: !isMobile ? "70px" : "40px",
-              gap: "20px",
-              alignItems: isMobile ? "center" : "",
-            }}
-          >
-            <img
-              src={item.pic1}
-              alt="pic1"
-              style={{
-                width: !isMobile ? "357px" : "300px",
-                height: !isMobile ? "278px" : "200px",
+          {pics === false ? null : (
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: isMobile ? "column" : "row",
+                marginTop: !isMobile ? "70px" : "40px",
+                gap: "20px",
+                alignItems: isMobile ? "center" : "",
               }}
-            />
-            <img
-              src={item.pic2}
-              alt="pic2"
-              style={{
-                width: !isMobile ? "357px" : "300px",
-                height: !isMobile ? "278px" : "200px",
-              }}
-            />
-            <img
-              src={item.pic3}
-              alt="pic3"
-              style={{
-                width: !isMobile ? "357px" : "300px",
-                height: !isMobile ? "278px" : "200px",
-              }}
-            />
-          </Box>
+            >
+              <img
+                src={item.pic1}
+                alt="pic1"
+                style={{
+                  width: !isMobile ? "357px" : "300px",
+                  height: !isMobile ? "278px" : "200px",
+                }}
+              />
+              <img
+                src={item.pic2}
+                alt="pic2"
+                style={{
+                  width: !isMobile ? "357px" : "300px",
+                  height: !isMobile ? "278px" : "200px",
+                }}
+              />
+              <img
+                src={item.pic3}
+                alt="pic3"
+                style={{
+                  width: !isMobile ? "357px" : "300px",
+                  height: !isMobile ? "278px" : "200px",
+                }}
+              />
+            </Box>
+          )}
         </Box>
       ))}
 

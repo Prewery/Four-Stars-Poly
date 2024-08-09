@@ -5,6 +5,7 @@ import { useMediaQuery } from "@mui/material";
 import SliderComponent from "./SliderComponent";
 import Banner from "./Banner";
 import { sliderItem } from "../../utils/SliderItem";
+import { bannerItem1 } from "../../utils/BannerItem";
 
 const OurCompanyComponent = () => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -94,7 +95,7 @@ const OurCompanyComponent = () => {
       </Box>
 
       {/* banner component */}
-      <Banner />
+      <Banner items={bannerItem1} />
     </Box>
   );
 };
