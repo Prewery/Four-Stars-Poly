@@ -83,7 +83,7 @@ const SliderComponent = ({ sliderItem, settings, style, theme }) => {
                   src={item.img}
                   alt="image"
                   style={{
-                    width: style ? "257px" : "307px",
+                    width: style ? "257px" : "300px",
                     height: style ? "187px" : "260px",
                   }}
                 />

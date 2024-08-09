@@ -82,6 +82,7 @@ const Navbar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+      {/* app bar */}
       <AppBar position="static">
         <Toolbar variant="dense" className="navbar">
           {/* mobile icon button */}

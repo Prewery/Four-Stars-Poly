@@ -52,7 +52,7 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -78,7 +78,7 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -109,7 +109,7 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -129,9 +129,9 @@ const WhyChooseUsComponent = () => {
           </Typography>
 
           <Typography textAlign={"center"}>
-            Our expertise in customizing <br /> polypropylene woven fabrics{" "}
-            <br /> allows us to provide tailored <br /> solutions that perfectly
-            match <br /> the requirements of diverse <br /> industries.
+            Our expertise in customizing polypropylene woven fabrics allows us
+            to provide tailored solutions that perfectly match the requirements
+            of diverse industries.
           </Typography>
         </Box>
 
@@ -140,7 +140,7 @@ const WhyChooseUsComponent = () => {
           sx={{
             width: "256px",
             height: "256px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",

@@ -7,7 +7,7 @@ import WhyChooseUsComponent from "../../components/HomeComponents/WhyChooseUsCom
 import WhatWeOfferComponent from "../../components/HomeComponents/WhatWeOfferComponent";
 import HowWeWorkComponent from "../../components/HomeComponents/HowWeWorkComponent";
 import WhatAreClientSaysComponent from "../../components/HomeComponents/WhatAreClientSaysComponent";
-import GetInTouchWithUsComponent from "../../components/HomeComponents/GetInTouchWithUsComponent";
+import EnquireUs from "../EnquireUs/EnquireUs";
 
 const Home = () => {
   return (
@@ -30,8 +30,8 @@ const Home = () => {
       {/* what are client says component */}
       <WhatAreClientSaysComponent />
 
-      {/* get in touch with us component */}
-      <GetInTouchWithUsComponent />
+      {/* get in touch with us and footer component */}
+      <EnquireUs />
     </Box>
   );
 };

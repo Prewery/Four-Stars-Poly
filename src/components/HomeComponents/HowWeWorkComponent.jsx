@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-import VideoImage from "../../assets/Images/pic4.png";
 import SliderComponent from "./SliderComponent";
 import { sliderItem2 } from "../../utils/SliderItem";
 
@@ -48,22 +47,25 @@ const HowWeWorkComponent = () => {
         </Typography>
       </Box>
 
-      {/* video container */}
+      {/* youtube video container */}
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           marginTop: "60px",
-          marginBottom: "30px",
+          marginBottom: "40px",
         }}
       >
-        <img
-          src={VideoImage}
-          alt="image"
-          style={{
-            width: isMobile ? "350px" : "",
-            height: isMobile ? "150px" : "",
-          }}
+        <iframe
+          width={!isMobile ? "1069" : ""}
+          height={!isMobile ? "470" : ""}
+          src="https://www.youtube.com/embed/IjlYXtI2-GU?si=Ey1RZ-tMQieM8XmP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          style={{ borderRadius: "7px" }}
         />
       </Box>
 

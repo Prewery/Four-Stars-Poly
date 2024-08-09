@@ -12,7 +12,7 @@ const OurCompanyComponent = () => {
   const sliderSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: isMobile ? 1 : 2.1,
+    slidesToShow: isMobile ? 1 : 2,
     slidesToScroll: isMobile ? 1 : 2,
     arrows: true,
     autoplay: true,
@@ -84,7 +84,7 @@ const OurCompanyComponent = () => {
         {/* right side content */}
         <Box
           sx={{
-            width: !isMobile ? "655px" : "330px",
+            width: !isMobile ? "700px" : "330px",
             height: "375px",
           }}
         >

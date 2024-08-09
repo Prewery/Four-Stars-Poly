@@ -11,7 +11,6 @@ const GetInTouchWithUsComponent = () => {
     <Box
       sx={{
         marginTop: "70px",
-        marginBottom: "70px",
         width: "100%",
         height: !isMobile ? "877px" : "1200px",
         backgroundImage: `url(${BackgroundImage})`, // background image
@@ -26,7 +25,7 @@ const GetInTouchWithUsComponent = () => {
         <Box
           sx={{
             position: "absolute",
-            top: "4040px",
+            top: "4050px",
             left: 0,
             width: "100%",
             height: "877px",

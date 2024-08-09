@@ -1,12 +1,15 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 import Pic1 from "../../assets/Images/pic1.png";
 import Pic2 from "../../assets/Images/pic2.png";
 import Pic3 from "../../assets/Images/pic3.png";
 
 const WhatWeOfferComponent = () => {
+  const navigate = useNavigate();
+
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -16,7 +19,6 @@ const WhatWeOfferComponent = () => {
         height: !isMobile ? "595px" : "100%",
         backgroundColor: "#F5F6F7",
         position: "relative",
-        zIndex: "-5",
         marginBottom: "70px",
         paddingBottom: isMobile ? "70px" : "",
       }}
@@ -62,7 +64,7 @@ const WhatWeOfferComponent = () => {
           sx={{
             width: "307px",
             height: "356px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -71,6 +73,7 @@ const WhatWeOfferComponent = () => {
             borderRadius: "4px",
             padding: "5px",
           }}
+          onClick={() => navigate("/hdpe-tapes")}
         >
           <img
             src={Pic1}
@@ -95,7 +98,7 @@ const WhatWeOfferComponent = () => {
           sx={{
             width: "307px",
             height: "356px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -104,6 +107,7 @@ const WhatWeOfferComponent = () => {
             borderRadius: "4px",
             padding: "5px",
           }}
+          onClick={() => navigate("/woven-fabrics")}
         >
           <img
             src={Pic2}
@@ -129,7 +133,7 @@ const WhatWeOfferComponent = () => {
           sx={{
             width: "307px",
             height: "356px",
-            boxShadow: "0px 4px 8px 6px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0px 2px 6px 4px rgba(0, 0, 0, 0.1)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -138,6 +142,7 @@ const WhatWeOfferComponent = () => {
             borderRadius: "4px",
             padding: "5px",
           }}
+          onClick={() => navigate("/woven-bags")}
         >
           <img
             src={Pic3}

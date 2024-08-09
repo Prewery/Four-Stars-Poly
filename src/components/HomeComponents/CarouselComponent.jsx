@@ -2,10 +2,13 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { useNavigate } from "react-router-dom";
 
 import { CarouselItem } from "../../utils/CarouselItem";
 
 const CarouselComponent = () => {
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ width: "100%" }}>
       <Carousel>
@@ -69,7 +72,7 @@ const CarouselComponent = () => {
                   },
                 }}
                 onClick={() => {
-                  console.log("Discover More button clicked");
+                  navigate("/woven-fabrics");
                 }}
               >
                 Discover More

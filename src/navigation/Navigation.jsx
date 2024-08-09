@@ -10,6 +10,7 @@ import WovenFabrics from "../pages/Products/WovenFabrics";
 import Sustainability from "../pages/About/Sustainability";
 import OurTeam from "../pages/About/OurTeam";
 import AboutUs from "../pages/About/AboutUs";
+import EnquireUs from "../pages/EnquireUs/EnquireUs";
 
 const Navigation = () => {
   return (
@@ -17,6 +18,7 @@ const Navigation = () => {
       <Route path="/" element={<Home />} />
       <Route path="/infrastructure" element={<Infrastructure />} />
       <Route path="/quality-assurance" element={<QualityAssurance />} />
+      <Route path="/enquire-us" element={<EnquireUs />} />
 
       {/* products pages */}
       <Route path="/hdpe-tapes" element={<HdpeTapes />} />
