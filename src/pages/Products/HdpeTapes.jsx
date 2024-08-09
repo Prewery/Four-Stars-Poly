@@ -5,6 +5,7 @@ import HeaderComponent from "../../components/ProductsComponents/HeaderComponent
 import IntroductionComponent from "../../components/ProductsComponents/IntroductionComponent";
 
 import HdpePic from "../../assets/Images/HDPE.png";
+import { hdpeItems } from "../../utils/ProductsItem";
 
 const HdpeTapes = () => {
   const headerText = "HDPE/PP Tapes";
@@ -15,7 +16,7 @@ const HdpeTapes = () => {
       <HeaderComponent pic={HdpePic} text={headerText} />
 
       {/* introduction component */}
-      <IntroductionComponent />
+      <IntroductionComponent items={hdpeItems} />
     </Box>
   );
 };
