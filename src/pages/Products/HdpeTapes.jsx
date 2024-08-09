@@ -4,11 +4,12 @@ import { Box } from "@mui/material";
 import HeaderComponent from "../../components/ProductsComponents/HeaderComponent";
 import IntroductionComponent from "../../components/ProductsComponents/IntroductionComponent";
 import FeaturesComponent from "../../components/ProductsComponents/FeaturesComponent";
+import DetailsComponent from "../../components/ProductsComponents/DetailsComponent";
 
 import HdpePic from "../../assets/Images/HDPE.png";
 import { hdpeItems } from "../../utils/IntroductionItem";
-
 import { featuresItem1 } from "../../utils/FeaturesItem";
+import { detailsItem } from "../../utils/DetailsItem";
 
 const HdpeTapes = () => {
   const headerText = "HDPE/PP Tapes";
@@ -21,8 +22,11 @@ const HdpeTapes = () => {
       {/* introduction component */}
       <IntroductionComponent items={hdpeItems} />
 
-      {/* FeaturesComponent */}
+      {/* features component */}
       <FeaturesComponent items={featuresItem1} />
+
+      {/* details component */}
+      <DetailsComponent items={detailsItem} />
     </Box>
   );
 };
