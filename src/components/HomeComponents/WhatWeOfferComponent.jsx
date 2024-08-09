@@ -32,7 +32,6 @@ const WhatWeOfferComponent = () => {
             height: "12px",
             backgroundColor: "#DBAB3C",
             position: "absolute",
-            zIndex: "-1",
             marginTop: "20px",
             left: !isMobile ? "662px" : "110px",
           }}
@@ -43,6 +42,7 @@ const WhatWeOfferComponent = () => {
           fontWeight={700}
           fontSize={24}
           color={"#000080"}
+          position="relative"
         >
           What we Offer?
         </Typography>

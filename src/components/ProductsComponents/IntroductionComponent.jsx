@@ -93,6 +93,69 @@ const IntroductionComponent = ({ items }) => {
           </Box>
         </Box>
       ))}
+
+      {/* box design */}
+      {!isMobile ? (
+        <div>
+          {/* left side */}
+          <div>
+            {/* big box */}
+            <div
+              style={{
+                position: "absolute",
+                width: "63px",
+                height: "63px",
+                backgroundColor: "#FFF5E1",
+                bottom: -280,
+                left: 180,
+                zIndex: "-1",
+              }}
+            />
+
+            {/* small box */}
+            <div
+              style={{
+                position: "absolute",
+                width: "19px",
+                height: "19px",
+                backgroundColor: "#FFF5E1",
+                bottom: -300,
+                left: 150,
+                zIndex: "-1",
+              }}
+            />
+          </div>
+
+          {/* right side */}
+          <div>
+            {/* big box */}
+            <div
+              style={{
+                position: "absolute",
+                width: "63px",
+                height: "63px",
+                backgroundColor: "#FFF5E1",
+                bottom: 10,
+                left: 1280,
+                zIndex: "-1",
+              }}
+            />
+
+            {/* small box */}
+            <div
+              style={{
+                position: "absolute",
+                width: "19px",
+                height: "19px",
+                backgroundColor: "#FFF5E1",
+                bottom: 65,
+                left: 1350,
+                zIndex: "-1",
+              }}
+            />
+          </div>
+        </div>
+      ) : null}
     </Box>
   );
 };
