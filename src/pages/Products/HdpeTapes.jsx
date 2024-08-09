@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Box } from "@mui/material";
+
+import HeaderComponent from "../../components/ProductsComponents/HeaderComponent";
+import IntroductionComponent from "../../components/ProductsComponents/IntroductionComponent";
+
+import HdpePic from "../../assets/Images/HDPE.png";
 
 const HdpeTapes = () => {
-  return (
-    <div>HdpeTapes</div>
-  )
-}
+  const headerText = "HDPE/PP Tapes";
 
-export default HdpeTapes
+  return (
+    <Box>
+      {/* header component */}
+      <HeaderComponent pic={HdpePic} text={headerText} />
+
+      {/* introduction component */}
+      <IntroductionComponent />
+    </Box>
+  );
+};
+
+export default HdpeTapes;

@@ -73,3 +73,7 @@ button:focus-visible {
 .button:hover {
   background-color: #0303aa;
 }
+
+.text-shadow {
+  text-shadow: 0px 4px 0px black;
+}
