@@ -5,6 +5,7 @@ import HeaderComponent from "../../components/ProductsComponents/HeaderComponent
 import IntroductionComponent from "../../components/ProductsComponents/IntroductionComponent";
 import FeaturesComponent from "../../components/ProductsComponents/FeaturesComponent";
 import DetailsComponent from "../../components/ProductsComponents/DetailsComponent";
+import QualityServicesComponent from "../../components/ProductsComponents/QualityServicesComponent";
 
 import HdpePic from "../../assets/Images/HDPE.png";
 import { hdpeItems } from "../../utils/IntroductionItem";
@@ -27,6 +28,9 @@ const HdpeTapes = () => {
 
       {/* details component */}
       <DetailsComponent items={detailsItem} />
+
+      {/* quality services component */}
+      <QualityServicesComponent />
     </Box>
   );
 };
