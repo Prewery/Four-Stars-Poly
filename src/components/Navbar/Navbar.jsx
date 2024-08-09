@@ -190,7 +190,9 @@ const Navbar = () => {
               <KeyboardArrowDown />
             </Box>
 
-            <button className="button">Enquire Now</button>
+            <button className="button" onClick={() => navigate("/enquire-us")}>
+              Enquire Now
+            </button>
           </Box>
 
           {/* mobile elements */}

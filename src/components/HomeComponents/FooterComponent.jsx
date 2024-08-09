@@ -28,6 +28,7 @@ const FooterComponent = () => {
         alignItems: !isMobile ? "center" : "",
         padding: !isMobile ? "0 120px" : "0 30px",
         gap: !isMobile ? "" : "10px",
+        marginTop: isMobile ? "230px" : "",
       }}
     >
       {/* logo and social links */}

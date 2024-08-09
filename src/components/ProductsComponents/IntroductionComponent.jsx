@@ -27,7 +27,7 @@ const IntroductionComponent = ({ items }) => {
             position: "absolute",
             zIndex: "-1",
             marginTop: "20px",
-            left: !isMobile ? "690px" : "128px",
+            left: !isMobile ? "682px" : "128px",
           }}
         />
 

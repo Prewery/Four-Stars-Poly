@@ -1,10 +1,12 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 import Pic from "../../assets/Images/QualityPic.png";
 
 const QualityServicesComponent = () => {
+  const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -33,7 +35,9 @@ const QualityServicesComponent = () => {
           products
         </Typography>
 
-        <button className="button">Enquire Now</button>
+        <button className="button" onClick={() => navigate("/enquire-us")}>
+          Enquire Now
+        </button>
       </Box>
 
       {/* right section */}
