@@ -7,6 +7,9 @@ import IntroductionComponent from "../../components/ProductsComponents/Introduct
 import SliderComponent2 from "../../components/InfrastructureComponents/SliderComponent2";
 import Banner from "../../components/HomeComponents/Banner";
 import ProductionLineComponent from "../../components/InfrastructureComponents/ProductionLineComponent";
+import QualityApprovalComponent from "../../components/InfrastructureComponents/QualityApprovalComponent";
+import QualityServicesComponent from "../../components/ProductsComponents/QualityServicesComponent";
+import FooterComponent from "../../components/HomeComponents/FooterComponent";
 
 import InfrastructurePic from "../../assets/Images/Infrastructure.png";
 import { infrastructureItems } from "../../utils/IntroductionItem";
@@ -44,6 +47,15 @@ const Infrastructure = () => {
 
       {/* prduction line component */}
       <ProductionLineComponent />
+
+      {/* quality approvals component */}
+      <QualityApprovalComponent />
+
+      {/* quality services component */}
+      <QualityServicesComponent condition={true} />
+
+      {/* footer component */}
+      <FooterComponent />
     </Box>
   );
 };

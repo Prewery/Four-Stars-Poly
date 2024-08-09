@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 import Pic from "../../assets/Images/QualityPic.png";
 
-const QualityServicesComponent = () => {
+const QualityServicesComponent = ({ condition }) => {
   const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px");
 
