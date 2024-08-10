@@ -4,8 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Navigation from "./navigation/Navigation";
 
-import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>
