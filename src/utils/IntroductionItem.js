@@ -65,3 +65,12 @@ export const aboutusItems = [
       "Four Stars Poly Private Limited, established in 2021, is a leading manufacturer of high-quality polypropylene (PP) woven fabrics and BOPP laminated woven bags. Located in Khandwa, Madhya Pradesh, our state-of-the-art facility spans 55,000 square feet, with a total campus area of 125,000 square feet. We pride ourselves on our advanced manufacturing processes, stringent quality control measures, and commitment to sustainability. With a production capacity of 10,000 metric tons per annum and a dedicated recycling plant, we deliver durable, eco-friendly products tailored to meet diverse industrial needs. Our mission is to provide innovative, reliable solutions that exceed our clients’ expectations.",
   },
 ];
+
+export const ourteamItems = [
+  {
+    title: "4 Stars Family",
+    subtitle: "Dedicated Professionals Driving Innovation and Quality",
+    description:
+      "At Four Stars Poly Private Limited, our team is the cornerstone of our success. Comprising skilled technicians, experienced engineers, and a dedicated management team, the Four Stars Poly family is committed to delivering the highest standards in manufacturing and quality control. Our technicians ensure precision and efficiency in every production step, while our engineers continuously innovate to enhance product performance and sustainability. The management team oversees operations with a focus on customer satisfaction and continuous improvement. Each team member brings expertise, dedication, and a passion for excellence, contributing to our reputation as a leader in polypropylene woven fabrics and BOPP bags. Together, we strive to exceed client expectations, foster a culture of innovation, and support a greener, more sustainable future. The collective efforts of our team enable us to meet diverse industrial needs and drive the ongoing growth and success of Four Stars Poly Private Limited.",
+  },
+];

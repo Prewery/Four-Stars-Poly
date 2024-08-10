@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const IntroductionComponent = ({ items, pics, condition }) => {
+const IntroductionComponent = ({ items, pics, condition, image }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -104,6 +104,21 @@ const IntroductionComponent = ({ items, pics, condition }) => {
           )}
         </Box>
       ))}
+
+      {/* conditional image */}
+      {image ? (
+        <Box>
+          <img
+            src={image}
+            alt="image"
+            style={{
+              width: !isMobile ? "1100px" : "350px",
+              height: !isMobile ? "436px" : "200px",
+              marginTop: !isMobile ? "60px" : "450px",
+            }}
+          />
+        </Box>
+      ) : null}
 
       {/* box design */}
       {!isMobile ? (
