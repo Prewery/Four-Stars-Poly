@@ -47,32 +47,32 @@ const Navbar = () => {
   };
 
   const handleTapesClick = () => {
-    navigate("/hdpe-tapes");
+    navigate("/products/hdpe-tapes");
     handleClose();
   };
 
   const handleFabricsClick = () => {
-    navigate("/woven-fabrics");
+    navigate("/products/woven-fabrics");
     handleClose();
   };
 
   const handleBagsClick = () => {
-    navigate("/woven-bags");
+    navigate("/products/woven-bags");
     handleClose();
   };
 
   const handleSustainabilityClick = () => {
-    navigate("/sustainability");
+    navigate("/about/sustainability");
     handleClose();
   };
 
   const handleOurTeamClick = () => {
-    navigate("/our-team");
+    navigate("/about/our-team");
     handleClose();
   };
 
   const handleAboutUsClick = () => {
-    navigate("/about-us");
+    navigate("/about/about-us");
     handleClose();
   };
 

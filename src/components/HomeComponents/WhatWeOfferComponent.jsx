@@ -73,7 +73,7 @@ const WhatWeOfferComponent = () => {
             borderRadius: "4px",
             padding: "5px",
           }}
-          onClick={() => navigate("/hdpe-tapes")}
+          onClick={() => navigate("/products/hdpe-tapes")}
         >
           <img
             src={Pic1}
@@ -107,7 +107,7 @@ const WhatWeOfferComponent = () => {
             borderRadius: "4px",
             padding: "5px",
           }}
-          onClick={() => navigate("/woven-fabrics")}
+          onClick={() => navigate("/products/woven-fabrics")}
         >
           <img
             src={Pic2}
@@ -142,7 +142,7 @@ const WhatWeOfferComponent = () => {
             borderRadius: "4px",
             padding: "5px",
           }}
-          onClick={() => navigate("/woven-bags")}
+          onClick={() => navigate("/products/woven-bags")}
         >
           <img
             src={Pic3}

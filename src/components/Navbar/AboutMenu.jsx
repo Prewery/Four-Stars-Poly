@@ -23,12 +23,12 @@ const AboutMenu = () => {
   };
 
   const handleOurTeamClick = () => {
-    navigate("/our-team");
+    navigate("/about/our-team");
     handleClose();
   };
 
   const handleAboutUsClick = () => {
-    navigate("/about-us");
+    navigate("/about/about-us");
     handleClose();
   };
 

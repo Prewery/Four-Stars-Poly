@@ -85,13 +85,13 @@ const FooterComponent = ({ style }) => {
         </Typography>
 
         <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          <NavLink to="/hdpe-tapes">
+          <NavLink to="/products/hdpe-tapes">
             <Typography color={"white"}>Plastic Yarns/ Threads</Typography>
           </NavLink>
-          <NavLink to="/woven-fabrics">
+          <NavLink to="/products/woven-fabrics">
             <Typography color={"white"}>Plastic Fabrics</Typography>
           </NavLink>
-          <NavLink to="/woven-bags">
+          <NavLink to="/products/woven-bags">
             <Typography color={"white"}>Multi Woven Plastic Fabric</Typography>
           </NavLink>
         </Box>
@@ -111,10 +111,10 @@ const FooterComponent = ({ style }) => {
         </Typography>
 
         <Box sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          <NavLink to="/sustainability">
+          <NavLink to="/about/sustainability">
             <Typography color={"white"}>Sustainability</Typography>
           </NavLink>
-          <NavLink to="/about-us">
+          <NavLink to="/about/about-us">
             <Typography color={"white"}>About Us</Typography>
           </NavLink>
           <NavLink to="/">

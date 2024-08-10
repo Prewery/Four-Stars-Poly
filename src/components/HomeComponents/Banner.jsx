@@ -20,7 +20,7 @@ const Banner = ({ items, condition, style }) => {
     >
       <Box
         sx={{
-          width: !isMobile ? "1040px" : "330px",
+          width: style ? "1200px" : isMobile ? "330px" : "1040px",
           height: !(condition === true) ? "126px" : "250px",
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
@@ -54,7 +54,9 @@ const Banner = ({ items, condition, style }) => {
           >
             {items[0].title2}
           </Typography>
-          <Typography textAlign={"center"}>{items[0].description}</Typography>
+          <Typography mb={style & !isMobile ? 3 : 0} textAlign={"center"}>
+            {items[0].description}
+          </Typography>
         </Box>
 
         {/* 2nd container */}
@@ -112,7 +114,10 @@ const Banner = ({ items, condition, style }) => {
           >
             {items[2].title2}
           </Typography>
-          <Typography textAlign={"center"} marginBottom={3}>
+          <Typography
+            textAlign={"center"}
+            marginBottom={style & !isMobile ? 6 : 3}
+          >
             {items[2].description}
           </Typography>
         </Box>
@@ -129,7 +134,7 @@ const Banner = ({ items, condition, style }) => {
         >
           <Typography
             fontWeight={700}
-            fontSize={24}
+            fontSize={style & !isMobile ? 20 : 24}
             textAlign={"center"}
             color={"#fff"}
           >
@@ -140,10 +145,14 @@ const Banner = ({ items, condition, style }) => {
             fontSize={20}
             textAlign={"center"}
             color={"#000080"}
+            marginTop={style & !isMobile ? 3.2 : 0}
           >
             {items[3].title2}
           </Typography>
-          <Typography textAlign={"center"} marginBottom={3}>
+          <Typography
+            textAlign={"center"}
+            marginTop={style & !isMobile ? 2.3 : 0}
+          >
             {items[3].description}
           </Typography>
         </Box>
@@ -161,7 +170,7 @@ const Banner = ({ items, condition, style }) => {
           >
             <Typography
               fontWeight={700}
-              fontSize={24}
+              fontSize={style & !isMobile ? 20 : 24}
               textAlign={"center"}
               color={"#fff"}
             >
@@ -169,7 +178,8 @@ const Banner = ({ items, condition, style }) => {
             </Typography>
             <Typography
               fontWeight={700}
-              fontSize={20}
+              fontSize={style & !isMobile ? 18 : 20}
+              marginTop={style & !isMobile ? 0.8 : 0}
               textAlign={"center"}
               color={"#000080"}
             >

@@ -78,7 +78,7 @@ const CarouselComponent = () => {
                   },
                 }}
                 onClick={() => {
-                  navigate("/woven-fabrics");
+                  navigate("/products/woven-fabrics");
                 }}
               >
                 Discover More

@@ -21,14 +21,14 @@ const Navigation = () => {
       <Route path="/enquire-us" element={<EnquireUs />} />
 
       {/* products pages */}
-      <Route path="/hdpe-tapes" element={<HdpeTapes />} />
-      <Route path="/woven-fabrics" element={<WovenFabrics />} />
-      <Route path="/woven-bags" element={<WovenBags />} />
+      <Route path="/products/hdpe-tapes" element={<HdpeTapes />} />
+      <Route path="/products/woven-fabrics" element={<WovenFabrics />} />
+      <Route path="/products/woven-bags" element={<WovenBags />} />
 
       {/* about pages */}
-      <Route path="/sustainability" element={<Sustainability />} />
-      <Route path="/our-team" element={<OurTeam />} />
-      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/about/sustainability" element={<Sustainability />} />
+      <Route path="/about/our-team" element={<OurTeam />} />
+      <Route path="/about/about-us" element={<AboutUs />} />
     </Routes>
   );
 };
