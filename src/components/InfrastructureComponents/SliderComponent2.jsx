@@ -5,18 +5,24 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const SliderComponent2 = ({ settings, sliderItem }) => {
+const SliderComponent2 = ({ settings, sliderItem, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
-  return (
-    <Box
-      sx={{
+  const boxStyle = style
+    ? {
+        width: !isMobile ? "600px" : "360px",
+        height: !isMobile ? "365px" : "",
+        marginTop: isMobile ? "350px" : "",
+      }
+    : {
         width: !isMobile ? "1147px" : "360px",
         height: !isMobile ? "365px" : "",
         marginLeft: !isMobile ? "190px" : "20px",
         marginTop: isMobile ? "350px" : "",
-      }}
-    >
+      };
+
+  return (
+    <Box sx={boxStyle}>
       <Slider {...settings}>
         {sliderItem.map((item, index) => (
           <div key={index}>
@@ -24,8 +30,8 @@ const SliderComponent2 = ({ settings, sliderItem }) => {
               src={item.img}
               alt="image"
               style={{
-                width: "546px",
-                height: "364px",
+                width: !style ? "546px" : "280px",
+                height: !style ? "364px" : "335px",
               }}
             />
           </div>

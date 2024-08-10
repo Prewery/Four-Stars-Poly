@@ -132,3 +132,15 @@ export const sliderItem7 = [
     img: SliderPic18,
   },
 ];
+
+export const sliderItem8 = [
+  {
+    img: SliderPic18,
+  },
+  {
+    img: SliderPic19,
+  },
+  {
+    img: SliderPic18,
+  },
+];

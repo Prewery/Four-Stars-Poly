@@ -74,3 +74,12 @@ export const ourteamItems = [
       "At Four Stars Poly Private Limited, our team is the cornerstone of our success. Comprising skilled technicians, experienced engineers, and a dedicated management team, the Four Stars Poly family is committed to delivering the highest standards in manufacturing and quality control. Our technicians ensure precision and efficiency in every production step, while our engineers continuously innovate to enhance product performance and sustainability. The management team oversees operations with a focus on customer satisfaction and continuous improvement. Each team member brings expertise, dedication, and a passion for excellence, contributing to our reputation as a leader in polypropylene woven fabrics and BOPP bags. Together, we strive to exceed client expectations, foster a culture of innovation, and support a greener, more sustainable future. The collective efforts of our team enable us to meet diverse industrial needs and drive the ongoing growth and success of Four Stars Poly Private Limited.",
   },
 ];
+
+export const sustainabilityItems = [
+  {
+    title: "Overview",
+    subtitle: "Tagline",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+];
