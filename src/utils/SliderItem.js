@@ -9,10 +9,14 @@ import SliderPic8 from "../assets/Images/SliderPic8.png";
 import SliderPic9 from "../assets/Images/SliderPic9.png";
 import SliderPic10 from "../assets/Images/SliderPic10.png";
 import SliderPic11 from "../assets/Images/SliderPic11.png";
-
 import SliderPic12 from "../assets/Images/SliderPic12.jpg";
 import SliderPic13 from "../assets/Images/SliderPic13.jpg";
 import SliderPic14 from "../assets/Images/SliderPic14.jpg";
+import SliderPic15 from "../assets/Images/SliderPic15.jpg";
+import SliderPic16 from "../assets/Images/SliderPic16.jpg";
+import SliderPic17 from "../assets/Images/SliderPic17.jpg";
+import SliderPic18 from "../assets/Images/SliderPic18.jpg";
+import SliderPic19 from "../assets/Images/SliderPic19.jpg";
 
 import AvatarImage1 from "../assets/Images/Avatar1.png";
 import AvatarImage2 from "../assets/Images/Avatar2.png";
@@ -102,5 +106,29 @@ export const sliderItem5 = [
   },
   {
     img: SliderPic12,
+  },
+];
+
+export const sliderItem6 = [
+  {
+    img: SliderPic15,
+  },
+  {
+    img: SliderPic16,
+  },
+  {
+    img: SliderPic17,
+  },
+];
+
+export const sliderItem7 = [
+  {
+    img: SliderPic18,
+  },
+  {
+    img: SliderPic19,
+  },
+  {
+    img: SliderPic18,
   },
 ];

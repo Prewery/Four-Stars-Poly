@@ -56,3 +56,12 @@ export const assuranceItems = [
       "At Four Stars Poly Private Limited, quality assurance is at the heart of our operations, ensuring that every product we deliver meets the highest standards of durability, performance, and consistency. Our commitment to quality begins with the careful selection of premium raw materials. We utilize high-density polyethylene (HDPE) and polypropylene (PP) resins, known for their exceptional strength and resilience. Each batch of raw materials undergoes rigorous testing for purity and quality, ensuring that only the best materials are used in our production processes.",
   },
 ];
+
+export const aboutusItems = [
+  {
+    title: "Overview",
+    subtitle: "Four Stars Poly Pvt. Ltd. - “Where Quality meets Innovation”",
+    description:
+      "Four Stars Poly Private Limited, established in 2021, is a leading manufacturer of high-quality polypropylene (PP) woven fabrics and BOPP laminated woven bags. Located in Khandwa, Madhya Pradesh, our state-of-the-art facility spans 55,000 square feet, with a total campus area of 125,000 square feet. We pride ourselves on our advanced manufacturing processes, stringent quality control measures, and commitment to sustainability. With a production capacity of 10,000 metric tons per annum and a dedicated recycling plant, we deliver durable, eco-friendly products tailored to meet diverse industrial needs. Our mission is to provide innovative, reliable solutions that exceed our clients’ expectations.",
+  },
+];

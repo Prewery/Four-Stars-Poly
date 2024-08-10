@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const IntroductionComponent = ({ items, pics }) => {
+const IntroductionComponent = ({ items, pics, condition }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -40,6 +40,15 @@ const IntroductionComponent = ({ items, pics }) => {
           {items[0].title}
         </Typography>
       </Box>
+
+      {/* subtitle */}
+      {condition ? (
+        <Box mt={1}>
+          <Typography fontWeight={200} fontSize={14}>
+            {items[0].subtitle}
+          </Typography>
+        </Box>
+      ) : null}
 
       {/* description and pics */}
       {items.map((item, index) => (
