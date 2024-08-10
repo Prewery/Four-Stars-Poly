@@ -18,7 +18,7 @@ const QualityServicesComponent = ({ condition }) => {
         flexDirection: isMobile ? "column" : "row",
         justifyContent: "space-between",
         alignItems: "center",
-        marginTop: isMobile ? "700px" : "",
+        marginTop: isMobile ? "650px" : "",
       }}
     >
       {/* left section */}

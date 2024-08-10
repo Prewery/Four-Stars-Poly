@@ -10,7 +10,7 @@ const Banner = ({ items, condition }) => {
       sx={{
         width: !isMobile ? "100%" : "null",
         height: !isMobile ? "270px" : "470px",
-        height: (condition === true) & isMobile ? "800px" : "",
+        // height: (condition === true) & isMobile ? "800px" : "",
         backgroundColor: "#DBAB3C",
         display: "flex",
         alignItems: !isMobile ? "center" : "",

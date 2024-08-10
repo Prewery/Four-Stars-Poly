@@ -48,3 +48,11 @@ export const infrastructureItems = [
       "BOPP (Biaxially Oriented Polypropylene) bags are high-quality packaging solutions renowned for their durability, versatility, and superior print quality. These bags are made by laminating a BOPP film onto woven polypropylene fabric, creating a robust, water-resistant, and tear-resistant material. The biaxial orientation of the polypropylene film provides excellent strength and clarity, making these bags ideal for vibrant, high-resolution printing, which enhances product presentation and brand visibility. BOPP bags are widely used in industries such as agriculture, food, chemicals, and retail for packaging products like grains, seeds, pet food, and more. Their eco-friendly nature, being recyclable and reusable, also makes them a sustainable choice. Customizable in size, design, and color, BOPP bags offer tailored solutions to meet specific client needs, ensuring optimal performance and aesthetic appeal.",
   },
 ];
+
+export const assuranceItems = [
+  {
+    title: "About our Product Quality",
+    description:
+      "At Four Stars Poly Private Limited, quality assurance is at the heart of our operations, ensuring that every product we deliver meets the highest standards of durability, performance, and consistency. Our commitment to quality begins with the careful selection of premium raw materials. We utilize high-density polyethylene (HDPE) and polypropylene (PP) resins, known for their exceptional strength and resilience. Each batch of raw materials undergoes rigorous testing for purity and quality, ensuring that only the best materials are used in our production processes.",
+  },
+];

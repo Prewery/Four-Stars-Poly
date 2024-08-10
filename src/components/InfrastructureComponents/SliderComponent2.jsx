@@ -12,9 +12,9 @@ const SliderComponent2 = ({ settings, sliderItem }) => {
     <Box
       sx={{
         width: !isMobile ? "1147px" : "360px",
-        height: !isMobile ? "365px" : "100px",
+        height: !isMobile ? "365px" : "",
         marginLeft: !isMobile ? "190px" : "20px",
-        marginTop: isMobile ? "400px" : "",
+        marginTop: isMobile ? "350px" : "",
       }}
     >
       <Slider {...settings}>

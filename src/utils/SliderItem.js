@@ -10,6 +10,10 @@ import SliderPic9 from "../assets/Images/SliderPic9.png";
 import SliderPic10 from "../assets/Images/SliderPic10.png";
 import SliderPic11 from "../assets/Images/SliderPic11.png";
 
+import SliderPic12 from "../assets/Images/SliderPic12.jpg";
+import SliderPic13 from "../assets/Images/SliderPic13.jpg";
+import SliderPic14 from "../assets/Images/SliderPic14.jpg";
+
 import AvatarImage1 from "../assets/Images/Avatar1.png";
 import AvatarImage2 from "../assets/Images/Avatar2.png";
 import AvatarImage3 from "../assets/Images/Avatar3.png";
@@ -83,5 +87,20 @@ export const sliderItem4 = [
   },
   {
     img: SliderPic11,
+  },
+];
+
+export const sliderItem5 = [
+  {
+    img: SliderPic12,
+  },
+  {
+    img: SliderPic13,
+  },
+  {
+    img: SliderPic14,
+  },
+  {
+    img: SliderPic12,
   },
 ];
