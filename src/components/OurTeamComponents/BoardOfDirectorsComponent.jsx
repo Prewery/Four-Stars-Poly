@@ -62,6 +62,7 @@ const BoardOfDirectorsComponent = () => {
       <Box mt={3}>
         {directorsData.map((director, index) => (
           <Box
+            key={index}
             sx={{
               width: !isMobile ? "1018px" : "300px",
               height: !isMobile ? "269px" : "100%",
