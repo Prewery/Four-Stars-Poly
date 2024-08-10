@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
-// import { Map, GoogleApiWrapper } from "google-maps-react";
+import { Map, Marker } from "pigeon-maps";
 
 const OurOfficeComponent = () => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -129,21 +129,11 @@ const OurOfficeComponent = () => {
       </Box>
 
       {/* map */}
-      {/* <Map
-        google={this.props.google}
-        style={{ width: "100%", height: "300px" }}
-        zoom={10}
-        initialCenter={{
-          lat: 28.70406,
-          lng: 77.102493,
-        }}
-      /> */}
+      <Map height={300} defaultCenter={[21.8061, 76.2421]} defaultZoom={11}>
+        <Marker width={50} anchor={[21.8061, 76.2421]} />
+      </Map>
     </Box>
   );
 };
 
 export default OurOfficeComponent;
-
-// export default GoogleApiWrapper({
-//   APIkEY: "",
-// })(OurOfficeComponent);
