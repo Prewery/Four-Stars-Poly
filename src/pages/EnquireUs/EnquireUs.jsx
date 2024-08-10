@@ -8,7 +8,7 @@ const EnquireUs = () => {
   return (
     <Box>
       {/* get in touch with us component */}
-      <GetInTouchWithUsComponent />
+      <GetInTouchWithUsComponent style={true} />
 
       {/* footer component */}
       <FooterComponent />

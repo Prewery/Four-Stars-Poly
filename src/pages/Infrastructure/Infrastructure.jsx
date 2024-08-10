@@ -44,7 +44,7 @@ const Infrastructure = () => {
       <SliderComponent2 settings={sliderSettings} sliderItem={sliderItem4} />
 
       {/* banner */}
-      <Banner items={bannerItem2} condition={true} />
+      <Banner items={bannerItem2} condition={true} style={true} />
 
       {/* prduction line component */}
       <ProductionLineComponent />
@@ -53,10 +53,10 @@ const Infrastructure = () => {
       <QualityApprovalComponent />
 
       {/* quality services component */}
-      <QualityServicesComponent condition={true} />
+      <QualityServicesComponent style={true} />
 
       {/* footer component */}
-      <FooterComponent />
+      <FooterComponent style={true} />
     </Box>
   );
 };

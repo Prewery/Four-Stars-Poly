@@ -43,7 +43,7 @@ const OurCompanyComponent = () => {
         {/* left side content */}
         <Box
           sx={{
-            width: !isMobile ? "426px" : "330px",
+            width: !isMobile ? "426px" : "360px",
             height: "375px",
             padding: "20px",
           }}

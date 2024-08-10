@@ -57,13 +57,13 @@ const Sustainability = () => {
       <DetailsComponent items={detailsItem4} style={true} />
 
       {/* banner component */}
-      <Banner items={bannerItem1} style={true} />
+      <Banner items={bannerItem1} />
 
       {/* quality services component */}
       <QualityServicesComponent style={true} />
 
       {/* footer component */}
-      <FooterComponent />
+      <FooterComponent style={true} />
     </Box>
   );
 };

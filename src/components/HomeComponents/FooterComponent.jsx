@@ -14,7 +14,7 @@ import {
 
 import Logo from "../../assets/Images/Logo2.png";
 
-const FooterComponent = () => {
+const FooterComponent = ({ style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -26,9 +26,9 @@ const FooterComponent = () => {
         flexDirection: isMobile ? "column" : "row",
         justifyContent: "space-between",
         alignItems: !isMobile ? "center" : "",
-        padding: !isMobile ? "0 120px" : "0 30px",
+        padding: !isMobile ? "0 120px" : "30px 30px",
         gap: !isMobile ? "" : "10px",
-        marginTop: isMobile ? "230px" : "",
+        marginTop: isMobile & style ? "230px" : "",
       }}
     >
       {/* logo and social links */}

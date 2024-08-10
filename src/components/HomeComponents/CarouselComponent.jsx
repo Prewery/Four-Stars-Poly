@@ -3,10 +3,12 @@ import { Box, Typography, Button } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 
 import { CarouselItem } from "../../utils/CarouselItem";
 
 const CarouselComponent = () => {
+  const isMobile = useMediaQuery("(max-width:600px");
   const navigate = useNavigate();
 
   return (
@@ -43,13 +45,17 @@ const CarouselComponent = () => {
             <Box
               position="absolute"
               top={199.32}
-              left={100}
+              left={isMobile ? 20 : 100}
               display="flex"
               flexDirection="column"
               gap={3}
               width="396px"
             >
-              <Typography color="#DBAB3C" fontSize={24} fontWeight={700}>
+              <Typography
+                color="#DBAB3C"
+                fontSize={isMobile ? 20 : 24}
+                fontWeight={700}
+              >
                 {item.title}
               </Typography>
               <Typography color="#ffffff" zIndex={999}>

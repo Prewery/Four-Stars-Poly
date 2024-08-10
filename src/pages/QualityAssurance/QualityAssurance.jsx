@@ -49,10 +49,10 @@ const QualityAssurance = () => {
       <CertificatesComponent />
 
       {/* quality services component */}
-      <QualityServicesComponent />
+      <QualityServicesComponent style={true} />
 
       {/* footer component */}
-      <FooterComponent />
+      <FooterComponent style={true} />
     </Box>
   );
 };

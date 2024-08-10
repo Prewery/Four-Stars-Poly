@@ -34,7 +34,7 @@ const WovenBags = () => {
       <QualityServicesComponent />
 
       {/* footer component */}
-      <FooterComponent />
+      <FooterComponent style={true} />
     </Box>
   );
 };

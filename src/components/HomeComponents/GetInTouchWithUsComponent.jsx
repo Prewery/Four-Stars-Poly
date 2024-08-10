@@ -4,7 +4,7 @@ import { useMediaQuery } from "@mui/material";
 
 import BackgroundImage from "../../assets/Images/pic5.png";
 
-const GetInTouchWithUsComponent = () => {
+const GetInTouchWithUsComponent = ({ style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -24,7 +24,7 @@ const GetInTouchWithUsComponent = () => {
         <Box
           sx={{
             position: "absolute",
-            top: "4035px",
+            top: !style ? "4075px" : "77px",
             left: 0,
             width: "100%",
             height: "877px",

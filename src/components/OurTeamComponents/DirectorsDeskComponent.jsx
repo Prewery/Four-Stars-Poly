@@ -17,7 +17,6 @@ const DirectorsDeskComponent = () => {
         justifyContent: "center",
         alignItems: "center",
         gap: "55px",
-        marginTop: isMobile ? "250px" : "",
       }}
     >
       {/* left section */}

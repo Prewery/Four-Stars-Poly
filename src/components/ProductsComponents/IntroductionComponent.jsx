@@ -13,7 +13,7 @@ const IntroductionComponent = ({ items, pics, condition, image }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: "70px",
+        marginBottom: isMobile ? "0px" : "40px",
       }}
     >
       {/* title */}

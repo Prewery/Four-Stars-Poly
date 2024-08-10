@@ -29,14 +29,18 @@ const HowWeWorkComponent = ({ settings, sliderItem }) => {
           fontWeight={700}
           fontSize={24}
           color={"#000080"}
-          marginBottom={"50px"}
+          marginBottom={isMobile ? "20px" : "50px"}
         >
           How We Work?
         </Typography>
       </Box>
 
       {/* slider */}
-      <SliderComponent2 settings={settings} sliderItem={sliderItem} />
+      <SliderComponent2
+        settings={settings}
+        sliderItem={sliderItem}
+        condition={true}
+      />
     </Box>
   );
 };

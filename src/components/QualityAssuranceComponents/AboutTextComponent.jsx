@@ -23,7 +23,7 @@ const AboutTextComponent = ({ items, pics, settings }) => {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "100px",
+        marginTop: "75px",
         marginBottom: "70px",
       }}
     >

@@ -9,12 +9,12 @@ const Banner = ({ items, condition, style }) => {
     <Box
       sx={{
         width: !isMobile ? "100%" : "null",
-        height: !isMobile ? "270px" : "470px",
+        height: isMobile & style ? "820px" : isMobile ? "470px" : "270px",
         backgroundColor: "#DBAB3C",
         display: "flex",
         alignItems: !isMobile ? "center" : "",
         justifyContent: "center",
-        marginTop: isMobile & style ? "300px" : isMobile ? "450px" : "70px",
+        marginTop: isMobile & style ? "100px" : isMobile ? "450px" : "70px",
         padding: isMobile ? "30px 80px" : "",
       }}
     >
@@ -24,7 +24,7 @@ const Banner = ({ items, condition, style }) => {
           height: !(condition === true) ? "126px" : "250px",
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          gap: isMobile ? "10px" : "",
+          gap: isMobile ? "20px" : "",
           alignItems: "center",
         }}
       >

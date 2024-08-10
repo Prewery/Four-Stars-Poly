@@ -43,7 +43,7 @@ const QualityApprovalComponent = () => {
 
       {/* text */}
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Typography width={"848px"} mt={3}>
+        <Typography width={"848px"} mt={3} ml={isMobile ? 1 : 0}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
