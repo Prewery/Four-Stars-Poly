@@ -61,10 +61,7 @@ const HowWeWorkComponent = () => {
           height={!isMobile ? "470" : ""}
           src="https://www.youtube.com/embed/IjlYXtI2-GU?si=Ey1RZ-tMQieM8XmP"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
           style={{ borderRadius: "7px" }}
         />
       </Box>

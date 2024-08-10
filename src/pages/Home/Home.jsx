@@ -32,7 +32,7 @@ const Home = () => {
       <WhatAreClientSaysComponent />
 
       {/* get in touch with us component */}
-      <GetInTouchWithUsComponent />
+      {/* <GetInTouchWithUsComponent /> */}
 
       {/* footer component */}
       <FooterComponent />
