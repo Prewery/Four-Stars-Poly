@@ -12,7 +12,6 @@ const SliderComponent2 = ({ settings, sliderItem, style }) => {
     ? {
         width: !isMobile ? "600px" : "360px",
         height: !isMobile ? "365px" : "",
-        marginTop: isMobile ? "350px" : "",
       }
     : {
         width: !isMobile ? "1147px" : "360px",

@@ -37,16 +37,24 @@ const AboutTextComponent = ({ items, pics, settings }) => {
             display: "flex",
             gap: "50px",
             marginTop: "50px",
-            width: "1128px",
+            width: !isMobile ? "1128px" : "400px",
+            flexDirection: isMobile ? "column" : "row",
+            alignItems: "center",
           }}
         >
           {/* left section */}
-          <Box width={"580px"}>
+          <Box width={!isMobile ? "580px" : "90%"}>
             <Typography>{items[0].description2}</Typography>
           </Box>
 
           {/* right section */}
-          <Box sx={{ display: "flex", gap: "30px", width: "665px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: "30px",
+              width: !isMobile ? "665px" : "400px",
+            }}
+          >
             {/* slider component */}
             <SliderComponent2
               settings={settings}

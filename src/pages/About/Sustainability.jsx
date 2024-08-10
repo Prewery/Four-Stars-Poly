@@ -5,12 +5,17 @@ import { useMediaQuery } from "@mui/material";
 import HeaderComponent from "../../components/ProductsComponents/HeaderComponent";
 import IntroductionComponent from "../../components/ProductsComponents/IntroductionComponent";
 import AboutTextComponent from "../../components/QualityAssuranceComponents/AboutTextComponent";
+import DetailsComponent from "../../components/ProductsComponents/DetailsComponent";
+import Banner from "../../components/HomeComponents/Banner";
+import QualityServicesComponent from "../../components/ProductsComponents/QualityServicesComponent";
+import FooterComponent from "../../components/HomeComponents/FooterComponent";
 
 import SustainabilityPic from "../../assets/Images/SustainabilityPic.jpg";
 import SustainabilityPic2 from "../../assets/Images/SustainabilityPic2.png";
 import { sustainabilityItems } from "../../utils/IntroductionItem";
 import { sustainabilityItems2 } from "../../utils/AboutTextItem";
-
+import { detailsItem4 } from "../../utils/DetailsItem";
+import { bannerItem1 } from "../../utils/BannerItem";
 
 const Sustainability = () => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -47,6 +52,18 @@ const Sustainability = () => {
         pics={true}
         settings={sliderSettings}
       />
+
+      {/* details component */}
+      <DetailsComponent items={detailsItem4} style={true} />
+
+      {/* banner component */}
+      <Banner items={bannerItem1} style={true} />
+
+      {/* quality services component */}
+      <QualityServicesComponent style={true} />
+
+      {/* footer component */}
+      <FooterComponent />
     </Box>
   );
 };

@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import DetailPic from "../../assets/Images/DetailPic.png";
 
-const DetailsComponent = ({ items }) => {
+const DetailsComponent = ({ items, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   const [activeIndex, setActiveIndex] = useState(1);
@@ -17,7 +17,6 @@ const DetailsComponent = ({ items }) => {
   return (
     <Box
       sx={{
-        marginBottom: "70px",
         width: "100%",
         height: "426px",
         backgroundImage: !isMobile ? `url(${DetailPic})` : null, // background image
@@ -33,7 +32,7 @@ const DetailsComponent = ({ items }) => {
         <Box
           sx={{
             position: "absolute",
-            top: 1560,
+            top: style ? 1872 : 1560,
             left: 0,
             width: "100%",
             height: "426px",
@@ -47,7 +46,7 @@ const DetailsComponent = ({ items }) => {
       <Box
         sx={{
           position: "relative",
-          width: !isMobile ? "400px" : "100%",
+          width: isMobile ? "100%" : "410px",
           height: "100%",
           backgroundColor: "black",
           display: "flex",
@@ -57,18 +56,19 @@ const DetailsComponent = ({ items }) => {
           gap: isMobile ? "15px" : "",
         }}
       >
-        {/* benefits */}
+        {/* benefits / Responsible Program */}
         <Box
           sx={{ display: "flex", marginTop: "70px", cursor: "pointer" }}
           onClick={() => handleItemClick(0)}
         >
           <Typography
             color={activeIndex === 0 ? "#DBAB3C" : "white"}
-            width={"150px"}
+            width={!style ? "150px" : "350px"}
             fontSize={activeIndex === 0 ? 28 : 20}
-            fontWeight={700}
+            fontWeight={style & isMobile ? 200 : 700}
+            marginLeft={style & isMobile ? 3 : 0}
           >
-            Benefits
+            {!style ? "Benefits" : "Responsible Program"}
           </Typography>
           <ArrowForwardIosIcon sx={{ color: "white" }} />
         </Box>
@@ -78,18 +78,19 @@ const DetailsComponent = ({ items }) => {
           sx={{ width: "400px", height: "1px", backgroundColor: "#DBAB3C" }}
         />
 
-        {/* process */}
+        {/* process / Waste Recycling Program */}
         <Box
           sx={{ display: "flex", cursor: "pointer" }}
           onClick={() => handleItemClick(1)}
         >
           <Typography
             color={activeIndex === 1 ? "#DBAB3C" : "white"}
-            width={"150px"}
+            width={!style ? "150px" : "350px"}
             fontSize={activeIndex === 1 ? 28 : 20}
-            fontWeight={700}
+            fontWeight={style & isMobile ? 200 : 700}
+            marginLeft={style & isMobile ? 3 : 0}
           >
-            Process
+            {!style ? "Process" : "Waste Recycling Program"}
           </Typography>
           <ArrowForwardIosIcon sx={{ color: "white" }} />
         </Box>
@@ -99,18 +100,19 @@ const DetailsComponent = ({ items }) => {
           sx={{ width: "400px", height: "1px", backgroundColor: "#DBAB3C" }}
         />
 
-        {/* specifications */}
+        {/* specifications / Waste Management Rules */}
         <Box
           sx={{ display: "flex", cursor: "pointer" }}
           onClick={() => handleItemClick(2)}
         >
           <Typography
             color={activeIndex === 2 ? "#DBAB3C" : "white"}
-            width={"150px"}
+            width={!style ? "150px" : "350px"}
             fontSize={20}
-            fontWeight={700}
+            fontWeight={style & isMobile ? 200 : 700}
+            marginLeft={style & isMobile ? 3 : 0}
           >
-            Specifications
+            {!style ? "Specifications" : "Waste Management Rules"}
           </Typography>
           <ArrowForwardIosIcon sx={{ color: "white" }} />
         </Box>
@@ -121,20 +123,22 @@ const DetailsComponent = ({ items }) => {
         />
 
         {/* speciality */}
-        <Box
-          sx={{ display: "flex", marginBottom: "70px", cursor: "pointer" }}
-          onClick={() => handleItemClick(3)}
-        >
-          <Typography
-            color={activeIndex === 3 ? "#DBAB3C" : "white"}
-            width={"150px"}
-            fontSize={activeIndex === 3 ? 28 : 20}
-            fontWeight={700}
+        {!style ? (
+          <Box
+            sx={{ display: "flex", marginBottom: "70px", cursor: "pointer" }}
+            onClick={() => handleItemClick(3)}
           >
-            Speciality
-          </Typography>
-          <ArrowForwardIosIcon sx={{ color: "white" }} />
-        </Box>
+            <Typography
+              color={activeIndex === 3 ? "#DBAB3C" : "white"}
+              width={"150px"}
+              fontSize={activeIndex === 3 ? 28 : 20}
+              fontWeight={700}
+            >
+              Speciality
+            </Typography>
+            <ArrowForwardIosIcon sx={{ color: "white" }} />
+          </Box>
+        ) : null}
       </Box>
 
       {/* right section */}
@@ -149,19 +153,19 @@ const DetailsComponent = ({ items }) => {
         }}
       >
         <Typography fontSize={24} fontWeight={700} color={"#DBAB3C"}>
-          {items[activeIndex].title1}
+          {items[activeIndex]?.title1}
         </Typography>
 
         <Typography color={"#fff"} textAlign={"justify"} mt={1}>
-          {items[activeIndex].description1}
+          {items[activeIndex]?.description1}
         </Typography>
 
         <Typography fontSize={24} fontWeight={700} color={"#DBAB3C"} mt={2}>
-          {items[activeIndex].title2}
+          {items[activeIndex]?.title2}
         </Typography>
 
         <Typography color={"#fff"} textAlign={"justify"} mt={1}>
-          {items[activeIndex].description2}
+          {items[activeIndex]?.description2}
         </Typography>
       </Box>
     </Box>

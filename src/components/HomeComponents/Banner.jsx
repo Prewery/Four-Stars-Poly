@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const Banner = ({ items, condition }) => {
+const Banner = ({ items, condition, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -10,12 +10,11 @@ const Banner = ({ items, condition }) => {
       sx={{
         width: !isMobile ? "100%" : "null",
         height: !isMobile ? "270px" : "470px",
-        // height: (condition === true) & isMobile ? "800px" : "",
         backgroundColor: "#DBAB3C",
         display: "flex",
         alignItems: !isMobile ? "center" : "",
         justifyContent: "center",
-        marginTop: isMobile ? "450px" : "70px",
+        marginTop: isMobile & style ? "300px" : isMobile ? "450px" : "70px",
         padding: isMobile ? "30px 80px" : "",
       }}
     >
