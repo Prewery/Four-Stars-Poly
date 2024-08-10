@@ -9,6 +9,7 @@ import {
   Menu,
   MenuItem,
   IconButton,
+  Button,
   Drawer,
   List,
 } from "@mui/material";
@@ -109,32 +110,41 @@ const Navbar = () => {
             sx={{ display: { xs: "none", sm: "flex", lg: "flex" } }}
           >
             {/* products button and its menu */}
-            <Box onClick={handleProductOpen} className="nav-link">
+            <Box
+              id="demo-positioned-button2"
+              aria-controls={productOpen ? "demo-positioned-menu2" : undefined}
+              aria-haspopup="true"
+              aria-expanded={productOpen ? "true" : undefined}
+              onClick={handleProductOpen}
+              sx={{ color: "black", cursor: "pointer", display: "flex" }}
+            >
               <Typography>Products</Typography>
-              <KeyboardArrowDown />
+              <KeyboardArrowDown sx={{ color: "black", cusror: "pointer" }} />
             </Box>
             <Menu
-              id="product-menu"
+              id="demo-positioned-menu2"
+              aria-labelledby="demo-positioned-button2"
               anchorEl={anchorE1}
               open={productOpen}
-              // open={Boolean(anchorE1) && anchorE1.id === "product-menu"}
               onClose={handleClose}
-              MenuListProps={{ "aria-labelledby": "basic-button" }}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              sx={{ marginTop: "50px" }}
             >
-              <MenuItem onClick={handleTapesClick}>
-                <Typography fontSize={14}>HDPE/PP Tapes</Typography>
+              <MenuItem onClick={() => navigate("/products/hdpe-tapes")}>
+                HDPE/PP Tapes
               </MenuItem>
-
-              <div className="border" />
-
-              <MenuItem onClick={handleFabricsClick}>
-                <Typography fontSize={14}>HDPE/PP Woven Fabrics</Typography>
+              <MenuItem onClick={() => navigate("/products/woven-fabrics")}>
+                HDPE/PP Woven Fabrics
               </MenuItem>
-
-              <div className="border" />
-
-              <MenuItem onClick={handleBagsClick}>
-                <Typography fontSize={14}>BOPP Laminated Woven Bags</Typography>
+              <MenuItem onClick={() => navigate("/products/woven-bags")}>
+                BOPP Laminated Woven Bags
               </MenuItem>
             </Menu>
 
@@ -149,32 +159,41 @@ const Navbar = () => {
             </NavLink>
 
             {/* about button */}
-            <Box onClick={handleAboutOpen} className="nav-link">
+            <Box
+              id="demo-positioned-button"
+              aria-controls={aboutOpen ? "demo-positioned-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={aboutOpen ? "true" : undefined}
+              onClick={handleAboutOpen}
+              sx={{ color: "black", cursor: "pointer", display: "flex" }}
+            >
               <Typography>About</Typography>
-              <KeyboardArrowDown />
+              <KeyboardArrowDown sx={{ color: "black", cusror: "pointer" }} />
             </Box>
             <Menu
-              id="about-menu"
-              anchorE1={anchorE1}
+              id="demo-positioned-menu"
+              aria-labelledby="demo-positioned-button"
+              anchorEl={anchorE2}
               open={aboutOpen}
-              // open={Boolean(anchorE1) && anchorE1.id === "about-menu"}
               onClose={handleClose}
-              MenuListProps={{ "aria-labelledby": "basic-button" }}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              sx={{ marginTop: "50px" }}
             >
-              <MenuItem onClick={handleSustainabilityClick}>
-                <Typography fontSize={14}>Sustainability</Typography>
+              <MenuItem onClick={() => navigate("/about/sustainability")}>
+                Sustainability
               </MenuItem>
-
-              <div className="border" />
-
-              <MenuItem onClick={handleOurTeamClick}>
-                <Typography fontSize={14}>Our Team</Typography>
+              <MenuItem onClick={() => navigate("/about/our-team")}>
+                Our Team
               </MenuItem>
-
-              <div className="border" />
-
-              <MenuItem onClick={handleAboutUsClick}>
-                <Typography fontSize={14}>About Us</Typography>
+              <MenuItem onClick={() => navigate("/about/about-us")}>
+                About Us
               </MenuItem>
             </Menu>
           </Box>

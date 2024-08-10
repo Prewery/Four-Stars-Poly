@@ -51,10 +51,10 @@
 }
 
 .border {
-  width: 185px;
+  width: 130px;
   height: 1px;
   background-color: #a6a6a6;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .border2 {
