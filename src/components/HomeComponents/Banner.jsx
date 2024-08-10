@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
+import design from "../../assets/Images/design.png";
+
 const Banner = ({ items, condition, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
@@ -16,8 +18,25 @@ const Banner = ({ items, condition, style }) => {
         justifyContent: "center",
         marginTop: isMobile & style ? "100px" : isMobile ? "450px" : "70px",
         padding: isMobile ? "30px 80px" : "",
+        position: "relative",
       }}
     >
+      {/* banner design */}
+      {!isMobile ? (
+        <>
+          {/* left side design */}
+          <div className="slanting1" />
+          <div className="slanting2" />
+          <div className="slanting3" />
+
+          {/* right side design */}
+          <div className="slanting4" />
+          <div className="slanting5" />
+          <div className="slanting6" />
+        </>
+      ) : null}
+
+      {/* main container */}
       <Box
         sx={{
           width: style ? "1200px" : isMobile ? "330px" : "1040px",
@@ -26,6 +45,7 @@ const Banner = ({ items, condition, style }) => {
           flexDirection: isMobile ? "column" : "row",
           gap: isMobile ? "20px" : "",
           alignItems: "center",
+          position: "relative",
         }}
       >
         {/* 1st container */}
