@@ -23,7 +23,7 @@ const AboutTextComponent = ({ items, pics, settings }) => {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "75px",
+        marginTop: "70px",
         marginBottom: "70px",
       }}
     >
@@ -52,7 +52,7 @@ const AboutTextComponent = ({ items, pics, settings }) => {
             sx={{
               display: "flex",
               gap: "30px",
-              width: !isMobile ? "665px" : "400px",
+              width: !isMobile ? "665px" : "280px",
             }}
           >
             {/* slider component */}

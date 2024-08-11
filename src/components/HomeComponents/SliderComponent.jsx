@@ -101,7 +101,7 @@ const SliderComponent = ({ sliderItem, settings, style, theme, pics }) => {
                   style={{
                     width: "319px",
                     height: "216px",
-                    border: "1px solid #000080",
+                    border: isMobile ? "" : "1px solid #000080",
                     borderRadius: "8px",
                     display: "flex",
                     flexDirection: "column",

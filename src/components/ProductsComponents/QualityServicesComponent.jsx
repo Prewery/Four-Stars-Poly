@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 import Pic from "../../assets/Images/QualityPic.png";
 
-const QualityServicesComponent = ({ style }) => {
+const QualityServicesComponent = ({ style, condition }) => {
   const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px");
 
@@ -18,7 +18,14 @@ const QualityServicesComponent = ({ style }) => {
         flexDirection: isMobile ? "column" : "row",
         justifyContent: "space-between",
         alignItems: "center",
-        marginTop: isMobile & style ? "50px" : isMobile ? "550px" : "",
+        marginTop:
+          isMobile & style
+            ? "60px"
+            : isMobile & condition
+            ? "660px"
+            : isMobile
+            ? "560px"
+            : "",
       }}
     >
       {/* left section */}

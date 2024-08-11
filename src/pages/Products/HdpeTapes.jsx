@@ -31,7 +31,7 @@ const HdpeTapes = () => {
       <DetailsComponent items={detailsItem} />
 
       {/* quality services component */}
-      <QualityServicesComponent />
+      <QualityServicesComponent condition={true} />
 
       {/* footer component */}
       <FooterComponent style={true} />

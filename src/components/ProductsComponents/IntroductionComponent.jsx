@@ -114,7 +114,7 @@ const IntroductionComponent = ({ items, pics, condition, image }) => {
             style={{
               width: !isMobile ? "1100px" : "350px",
               height: !isMobile ? "436px" : "200px",
-              marginTop: !isMobile ? "60px" : "450px",
+              marginTop: !isMobile ? "60px" : "350px",
             }}
           />
         </Box>

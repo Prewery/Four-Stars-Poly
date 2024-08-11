@@ -72,6 +72,7 @@ const WhatWeOfferComponent = () => {
             gap: "20px",
             borderRadius: "4px",
             padding: "5px",
+            cursor: "pointer",
           }}
           onClick={() => navigate("/products/hdpe-tapes")}
         >
@@ -106,6 +107,7 @@ const WhatWeOfferComponent = () => {
             gap: "20px",
             borderRadius: "4px",
             padding: "5px",
+            cursor: "pointer",
           }}
           onClick={() => navigate("/products/woven-fabrics")}
         >
@@ -141,6 +143,7 @@ const WhatWeOfferComponent = () => {
             gap: "20px",
             borderRadius: "4px",
             padding: "5px",
+            cursor: "pointer",
           }}
           onClick={() => navigate("/products/woven-bags")}
         >
