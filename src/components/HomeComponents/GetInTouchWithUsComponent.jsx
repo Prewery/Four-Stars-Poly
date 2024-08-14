@@ -1,73 +1,56 @@
 import React, { useState } from "react";
 import { Box, MenuItem, Select, TextField, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import Alert from "@mui/material/Alert";
 
 import BackgroundImage from "../../assets/Images/pic5.png";
 
 const GetInTouchWithUsComponent = ({ style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    companyName: "",
-    country: "",
-    query: "",
-    subject: "",
-    message: "",
-  });
-  const [errors, setErrors] = useState({});
-
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //   setFormData({
-  //     ...inputs,
-  //     [name]: value,
-  //   });
-  // };
-
-  const handleSubmit = (e) => {
-    // e.preventDefault();
-    // const newErrors = {};
-    // if (!formData.name) newErrors.name = "Name is required";
-    // if (!formData.email) newErrors.email = "Email is required";
-    // if (!formData.contact) newErrors.contact = "Contact Number is required";
-    // if (!formData.companyName)
-    //   newErrors.companyName = "Company Name is required";
-    // if (!formData.country) newErrors.country = "Country is required";
-    // if (!formData.query) newErrors.query = "Query is required";
-    // if (!formData.subject) newErrors.subject = "Subject is required";
-    // if (!formData.message) newErrors.message = "Message is required";
-
-    // if (Object.keys(newErrors).length > 0) {
-    //   setErrors(newErrors);
-    //   return;
-    // }
-
-    // // Handle form submission here (e.g., send data to server)
-    // console.log(formData);
-    // // Clear form data and errors
-    // setFormData({ name: "", email: "", message: "" });
-    // setErrors({});
-
-    console.log(value);
-  };
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
-  const [subject, setSubject] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [country, setCountry] = useState("");
   const [query, setQuery] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [flag, setFlag] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleChange(e) {
-    setName(e.target.value);
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    console.log(name);
-  }
+    if (
+      !name ||
+      !email ||
+      !contact ||
+      !companyName ||
+      // !country ||
+      // !query ||
+      !subject ||
+      !message
+    ) {
+      setError(true);
+      return;
+    }
+
+    setFlag(true);
+
+    console.log({
+      name,
+      email,
+      contact,
+      companyName,
+      country,
+      query,
+      subject,
+      message,
+    });
+
+    setError(false);
+  };
 
   return (
     <Box
@@ -100,7 +83,7 @@ const GetInTouchWithUsComponent = ({ style }) => {
       <Box
         sx={{
           width: !isMobile ? "695px" : "300px",
-          height: !isMobile ? "693px" : "1000px",
+          height: !isMobile ? "750px" : "1020px",
           background: "white",
           borderRadius: "4px",
           padding: "20px",
@@ -131,6 +114,8 @@ const GetInTouchWithUsComponent = ({ style }) => {
             </label>
             <input
               placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               style={{
                 height: "38px",
                 borderRadius: "2px",
@@ -167,6 +152,8 @@ const GetInTouchWithUsComponent = ({ style }) => {
                 id="email"
                 type="text"
                 placeholder="Enter your Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 style={{
                   height: "38px",
                   width: !isMobile ? "357px" : "",
@@ -195,6 +182,8 @@ const GetInTouchWithUsComponent = ({ style }) => {
                 id="contact-number"
                 type="text"
                 placeholder="eg. 9876054786"
+                value={contact}
+                onChange={(e) => setContact(e.target.value)}
                 style={{
                   height: "38px",
                   width: !isMobile ? "244px" : "",
@@ -233,6 +222,8 @@ const GetInTouchWithUsComponent = ({ style }) => {
                 id="company-name"
                 type="text"
                 placeholder="Enter your Company Name"
+                value={companyName}
+                onChange={(e) => setCompanyName(e.target.value)}
                 style={{
                   height: "38px",
                   width: !isMobile ? "357px" : "",
@@ -270,7 +261,11 @@ const GetInTouchWithUsComponent = ({ style }) => {
                   paddingLeft: "20px",
                 }}
               >
-                <MenuItem value="" disabled>
+                <MenuItem
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  disabled
+                >
                   Select your Country
                 </MenuItem>
                 <MenuItem value="india">India</MenuItem>
@@ -315,7 +310,11 @@ const GetInTouchWithUsComponent = ({ style }) => {
                   paddingLeft: "20px",
                 }}
               >
-                <MenuItem value="" disabled>
+                <MenuItem
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  disabled
+                >
                   Select your Products
                 </MenuItem>
                 <MenuItem value="hdpe-tapes">Hdpe Tapes</MenuItem>
@@ -341,6 +340,8 @@ const GetInTouchWithUsComponent = ({ style }) => {
                 id="subject"
                 type="text"
                 placeholder="Enter Query Subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 style={{
                   height: "38px",
                   width: !isMobile ? "240px" : "",
@@ -369,6 +370,8 @@ const GetInTouchWithUsComponent = ({ style }) => {
               label="Type your Query message here..."
               multiline
               rows={4}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               sx={{
                 borderRadius: "2px",
                 border: "none",
@@ -376,6 +379,16 @@ const GetInTouchWithUsComponent = ({ style }) => {
               }}
             />
           </Box>
+
+          {/* success message */}
+          {flag ? (
+            <Box sx={{ marginTop: "20px" }}>
+              <Alert severity="success">
+                Thank you! Your enquiry is successfully submitted, our team will
+                revert back to you soon...
+              </Alert>
+            </Box>
+          ) : null}
 
           {/* submit button */}
           <Box
@@ -390,10 +403,11 @@ const GetInTouchWithUsComponent = ({ style }) => {
             </button>
           </Box>
 
-          {Object.keys(errors).length > 0 && (
-            <p style={{ color: "red", fontSize: "14px", marginBottom: "10px" }}>
-              {Object.values(errors)[0]}
-            </p>
+          {/* error message */}
+          {error && (
+            <Typography color="error" textAlign="center" mt={2}>
+              Enter required fields
+            </Typography>
           )}
         </Box>
       </Box>
