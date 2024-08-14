@@ -76,11 +76,12 @@ const BoardOfDirectorsComponent = () => {
           >
             {/* left section */}
             <Box>
-              <img
+              {/* <img
                 src={ProfilePic}
                 alt="profile"
                 style={{ width: "235px", height: "270px" }}
-              />
+              /> */}
+              <Box style={{ width: "235px", height: "270px" }} />
             </Box>
 
             {/* right section */}

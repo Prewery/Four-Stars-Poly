@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import CountUp from "react-countup";
 
 const Banner = ({ items, condition, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -64,6 +65,7 @@ const Banner = ({ items, condition, style }) => {
             textAlign={"center"}
             color={"#fff"}
           >
+            <CountUp start={0} end={items[0].count} duration={5} />
             {items[0].title1}
           </Typography>
           <Typography
@@ -95,6 +97,7 @@ const Banner = ({ items, condition, style }) => {
             textAlign={"center"}
             color={"#fff"}
           >
+            <CountUp start={0} end={items[1].count} duration={5} />
             {items[1].title1}
           </Typography>
           <Typography
@@ -124,6 +127,7 @@ const Banner = ({ items, condition, style }) => {
             textAlign={"center"}
             color={"#fff"}
           >
+            <CountUp start={0} end={items[2].count} duration={5} />
             {items[2].title1}
           </Typography>
           <Typography
@@ -158,6 +162,7 @@ const Banner = ({ items, condition, style }) => {
             textAlign={"center"}
             color={"#fff"}
           >
+            <CountUp start={0} end={items[3].count} duration={5} />
             {items[3].title1}
           </Typography>
           <Typography
@@ -194,6 +199,7 @@ const Banner = ({ items, condition, style }) => {
               textAlign={"center"}
               color={"#fff"}
             >
+              <CountUp start={0} end={items[4].count} duration={5} />
               {items[4]?.title1}
             </Typography>
             <Typography

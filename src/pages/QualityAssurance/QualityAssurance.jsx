@@ -14,6 +14,7 @@ import FooterComponent from "../../components/HomeComponents/FooterComponent";
 import { assuranceItems } from "../../utils/IntroductionItem";
 import { sliderItem5 } from "../../utils/SliderItem";
 import { assuranceItems2 } from "../../utils/AboutTextItem";
+import { certificateItems } from "../../utils/CertificateItem";
 
 const QualityAssurance = () => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -46,7 +47,7 @@ const QualityAssurance = () => {
       <AboutTextComponent items={assuranceItems2} />
 
       {/* certificates component */}
-      <CertificatesComponent />
+      <CertificatesComponent items={certificateItems} />
 
       {/* quality services component */}
       <QualityServicesComponent style={true} />

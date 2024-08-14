@@ -28,7 +28,7 @@ const OurJourneyComponent = () => {
             width: "100%",
             height: "560px",
             background:
-              "linear-gradient(to right, rgba(0,0,0,2) 40%, rgba(0,0,0,0.2) 80%)",
+              "linear-gradient(to right, rgba(0,0,0,2) 50%, rgba(0,0,0,0.2) 80%)",
           }}
         />
       ) : null}
@@ -41,7 +41,7 @@ const OurJourneyComponent = () => {
           fontWeight={700}
           position={"relative"}
         >
-          Our Jorney
+          Our Journey
         </Typography>
 
         <Typography

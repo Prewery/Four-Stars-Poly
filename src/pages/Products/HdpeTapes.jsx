@@ -28,7 +28,7 @@ const HdpeTapes = () => {
       <FeaturesComponent items={featuresItem1} />
 
       {/* details component */}
-      <DetailsComponent items={detailsItem} />
+      <DetailsComponent items={detailsItem} row={7} />
 
       {/* quality services component */}
       <QualityServicesComponent condition={true} />

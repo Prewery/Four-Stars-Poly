@@ -4,6 +4,9 @@ import { useMediaQuery } from "@mui/material";
 
 import Pic1 from "../../assets/Images/Approval1.png";
 import Pic2 from "../../assets/Images/Approval2.png";
+import Pic3 from "../../assets/Images/Approval3.jpg";
+import Pic4 from "../../assets/Images/Approval4.jpg";
+import Pic5 from "../../assets/Images/Approval5.jpg";
 
 const QualityApprovalComponent = () => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -42,7 +45,7 @@ const QualityApprovalComponent = () => {
       </Box>
 
       {/* text */}
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      {/* <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Typography
           width={!isMobile ? "848px" : "320px"}
           mt={3}
@@ -53,7 +56,7 @@ const QualityApprovalComponent = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </Typography>
-      </Box>
+      </Box> */}
 
       {/* certificate pics */}
       <Box
@@ -67,19 +70,19 @@ const QualityApprovalComponent = () => {
         }}
       >
         <img
-          src={Pic1}
+          src={Pic3}
           alt="pic1"
           style={{ width: "299px", height: "371px" }}
         />
 
         <img
-          src={Pic2}
+          src={Pic4}
           alt="pic1"
           style={{ width: "299px", height: "371px" }}
         />
 
         <img
-          src={Pic1}
+          src={Pic5}
           alt="pic1"
           style={{ width: "299px", height: "371px" }}
         />

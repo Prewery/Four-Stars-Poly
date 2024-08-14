@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, MenuItem, Select, TextField, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
@@ -6,6 +6,68 @@ import BackgroundImage from "../../assets/Images/pic5.png";
 
 const GetInTouchWithUsComponent = ({ style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contact: "",
+    companyName: "",
+    country: "",
+    query: "",
+    subject: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setFormData({
+  //     ...inputs,
+  //     [name]: value,
+  //   });
+  // };
+
+  const handleSubmit = (e) => {
+    // e.preventDefault();
+    // const newErrors = {};
+    // if (!formData.name) newErrors.name = "Name is required";
+    // if (!formData.email) newErrors.email = "Email is required";
+    // if (!formData.contact) newErrors.contact = "Contact Number is required";
+    // if (!formData.companyName)
+    //   newErrors.companyName = "Company Name is required";
+    // if (!formData.country) newErrors.country = "Country is required";
+    // if (!formData.query) newErrors.query = "Query is required";
+    // if (!formData.subject) newErrors.subject = "Subject is required";
+    // if (!formData.message) newErrors.message = "Message is required";
+
+    // if (Object.keys(newErrors).length > 0) {
+    //   setErrors(newErrors);
+    //   return;
+    // }
+
+    // // Handle form submission here (e.g., send data to server)
+    // console.log(formData);
+    // // Clear form data and errors
+    // setFormData({ name: "", email: "", message: "" });
+    // setErrors({});
+
+    console.log(value);
+  };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+  const [subject, setSubject] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [country, setCountry] = useState("");
+  const [query, setQuery] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleChange(e) {
+    setName(e.target.value);
+
+    console.log(name);
+  }
 
   return (
     <Box
@@ -68,9 +130,7 @@ const GetInTouchWithUsComponent = ({ style }) => {
               Name<span style={{ color: "#FF0000" }}>*</span>
             </label>
             <input
-              id="name"
-              type="text"
-              placeholder="Enter Your Full Name"
+              placeholder="Enter your name"
               style={{
                 height: "38px",
                 borderRadius: "2px",
@@ -325,10 +385,16 @@ const GetInTouchWithUsComponent = ({ style }) => {
               marginTop: "30px",
             }}
           >
-            <button type="submit" className="button">
+            <button className="button" onClick={handleSubmit}>
               Submit
             </button>
           </Box>
+
+          {Object.keys(errors).length > 0 && (
+            <p style={{ color: "red", fontSize: "14px", marginBottom: "10px" }}>
+              {Object.values(errors)[0]}
+            </p>
+          )}
         </Box>
       </Box>
     </Box>

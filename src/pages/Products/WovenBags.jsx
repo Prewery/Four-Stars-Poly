@@ -28,7 +28,7 @@ const WovenBags = () => {
       <FeaturesComponent items={featuresItem3} />
 
       {/* details component */}
-      <DetailsComponent items={detailsItem3} />
+      <DetailsComponent items={detailsItem3} row={12} />
 
       {/* quality services component */}
       <QualityServicesComponent />
