@@ -9,6 +9,7 @@ import DetailsComponent from "../../components/ProductsComponents/DetailsCompone
 import Banner from "../../components/HomeComponents/Banner";
 import QualityServicesComponent from "../../components/ProductsComponents/QualityServicesComponent";
 import FooterComponent from "../../components/HomeComponents/FooterComponent";
+import SliderComponent2 from "../../components/InfrastructureComponents/SliderComponent2";
 
 import SustainabilityPic from "../../assets/Images/SustainabilityPic.jpg";
 import SustainabilityPic2 from "../../assets/Images/SustainabilityPic2.png";
@@ -16,6 +17,7 @@ import { sustainabilityItems } from "../../utils/IntroductionItem";
 import { sustainabilityItems2 } from "../../utils/AboutTextItem";
 import { detailsItem4 } from "../../utils/DetailsItem";
 import { bannerItem1 } from "../../utils/BannerItem";
+import { sliderItem5 } from "../../utils/SliderItem";
 
 const Sustainability = () => {
   const isMobile = useMediaQuery("(max-width:600px");
@@ -43,18 +45,21 @@ const Sustainability = () => {
         items={sustainabilityItems}
         pics={false}
         condition={true}
-        image={SustainabilityPic2}
+        // image={SustainabilityPic2}
       />
+
+      {/* slider component */}
+      <SliderComponent2 settings={sliderSettings} sliderItem={sliderItem5} />
 
       {/* about our product quality text component */}
       <AboutTextComponent
         items={sustainabilityItems2}
-        pics={true}
-        settings={sliderSettings}
+        // pics={true}
+        // settings={sliderSettings}
       />
 
       {/* details component */}
-      <DetailsComponent items={detailsItem4} style={true} />
+      {/* <DetailsComponent items={detailsItem4} style={true} /> */}
 
       {/* banner component */}
       <Banner items={bannerItem1} />

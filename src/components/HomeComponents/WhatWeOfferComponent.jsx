@@ -79,7 +79,7 @@ const WhatWeOfferComponent = () => {
           <img
             src={Pic1}
             alt="image"
-            style={{ width: "211px", height: "167px" }}
+            style={{ width: "211px", height: "150px" }}
           />
 
           <Typography color={"#000080"} fontWeight={700} fontSize={18}>

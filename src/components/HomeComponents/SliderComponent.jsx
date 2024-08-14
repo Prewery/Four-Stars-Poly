@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-const SliderComponent = ({ sliderItem, settings, style, theme, pics }) => {
+const SliderComponent = ({ sliderItem, settings, style, theme }) => {
   const isMobile = useMediaQuery("(max-width:600px");
 
   return (
@@ -84,7 +84,7 @@ const SliderComponent = ({ sliderItem, settings, style, theme, pics }) => {
                   src={item.img}
                   alt="image"
                   style={{
-                    width: style ? "257px" : "300px",
+                    width: style ? "240px" : "300px",
                     height: style ? "187px" : "260px",
                   }}
                 />
@@ -99,7 +99,7 @@ const SliderComponent = ({ sliderItem, settings, style, theme, pics }) => {
               <div key={index}>
                 <div
                   style={{
-                    width: "319px",
+                    width: "300px",
                     height: "216px",
                     border: isMobile ? "" : "1px solid #000080",
                     borderRadius: "8px",
@@ -116,7 +116,11 @@ const SliderComponent = ({ sliderItem, settings, style, theme, pics }) => {
                     <img
                       src={item.img}
                       alt="image"
-                      style={{ width: "40px", height: "40px" }}
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                      }}
                     />
 
                     <div>

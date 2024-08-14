@@ -1,4 +1,8 @@
 import CarouselImage from "../assets/Images/CarouselImage.png";
+import CarouselImage2 from "../assets/Images/CarouselImage2.jpg";
+import CarouselImage3 from "../assets/Images/CarouselImage3.jpg";
+import CarouselImage4 from "../assets/Images/SustainabilityPic.jpg";
+import CarouselImage5 from "../assets/Images/OurTeamPic.jpg";
 
 export const CarouselItem = [
   {
@@ -6,29 +10,34 @@ export const CarouselItem = [
     description:
       "Pioneering advanced techniques for customized polypropylene woven fabric solutions across diverse industries.",
     image: CarouselImage,
+    navigate: "/products/woven-fabrics",
   },
   {
-    title: "Leading Polypropylene Woven Fabric Manufacturing Excellence",
+    title: "Sustainable and Eco-Friendly BOPP Packaging Solution",
     description:
-      "Pioneering advanced techniques for customized polypropylene woven fabric solutions across diverse industries.",
-    image: CarouselImage,
+      "Commitment to green manufacturing with environmentally responsible BOPP packaging products.",
+    image: CarouselImage2,
+    navigate: "/products/woven-bags",
   },
   {
-    title: "Leading Polypropylene Woven Fabric Manufacturing Excellence",
+    title: "Advanced Manufacturing Processes Ensuring Superior Quality",
     description:
-      "Pioneering advanced techniques for customized polypropylene woven fabric solutions across diverse industries.",
-    image: CarouselImage,
+      "Employing cutting-edge technology and stringent quality control for unmatched fabric excellence.",
+    image: CarouselImage3,
+    navigate: "/quality-assurance",
   },
   {
-    title: "Leading Polypropylene Woven Fabric Manufacturing Excellence",
+    title: "Production Capacity of 10MT/Day",
     description:
-      "Pioneering advanced techniques for customized polypropylene woven fabric solutions across diverse industries.",
-    image: CarouselImage,
+      "High-volume production ensuring timely delivery to meet large-scale industrial demands efficiently.",
+    image: CarouselImage4,
+    navigate: "/infrastructure",
   },
   {
-    title: "Leading Polypropylene Woven Fabric Manufacturing Excellence",
+    title: "Delivering Reliable and Durable Woven Fabrics Bags Worldwide",
     description:
-      "Pioneering advanced techniques for customized polypropylene woven fabric solutions across diverse industries.",
-    image: CarouselImage,
+      "Global provider of high-quality, durable woven fabric bags for a variety of applications.",
+    image: CarouselImage5,
+    navigate: "/quality-assurance",
   },
 ];

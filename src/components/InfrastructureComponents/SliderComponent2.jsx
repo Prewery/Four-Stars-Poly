@@ -10,7 +10,7 @@ const SliderComponent2 = ({ settings, sliderItem, style, condition }) => {
 
   const boxStyle = style
     ? {
-        width: !isMobile ? "600px" : "360px",
+        width: !isMobile ? "600px" : "300px",
         height: !isMobile ? "365px" : "",
       }
     : {

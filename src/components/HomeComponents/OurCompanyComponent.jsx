@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 import SliderComponent from "./SliderComponent";
 import Banner from "./Banner";
@@ -8,6 +9,7 @@ import { sliderItem } from "../../utils/SliderItem";
 import { bannerItem1 } from "../../utils/BannerItem";
 
 const OurCompanyComponent = () => {
+  const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px");
 
   const sliderSettings = {
@@ -77,7 +79,13 @@ const OurCompanyComponent = () => {
             production capacity of 10 metric tons.
           </Typography>
 
-          <button className="button" style={{ marginTop: "20px" }}>
+          <button
+            className="button"
+            style={{ marginTop: "20px" }}
+            onClick={() => {
+              navigate("/about/about-us");
+            }}
+          >
             Read More
           </button>
         </Box>
@@ -85,7 +93,7 @@ const OurCompanyComponent = () => {
         {/* right side content */}
         <Box
           sx={{
-            width: !isMobile ? "700px" : "330px",
+            width: !isMobile ? "700px" : "405px",
             height: "375px",
           }}
         >

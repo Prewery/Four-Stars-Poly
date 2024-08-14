@@ -24,7 +24,7 @@ const GetInTouchWithUsComponent = ({ style }) => {
         <Box
           sx={{
             position: "absolute",
-            top: !style ? "4075px" : "77px",
+            top: !style ? "4078px" : "77px",
             left: 0,
             width: "100%",
             height: "877px",

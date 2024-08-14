@@ -2,15 +2,15 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
-import design from "../../assets/Images/design.png";
-
 const Banner = ({ items, condition, style }) => {
   const isMobile = useMediaQuery("(max-width:600px");
+  const isLarge = useMediaQuery("(max-width:1450px");
+  const isVerLarge = useMediaQuery("(max-width:1600px");
 
   return (
     <Box
       sx={{
-        width: !isMobile ? "100%" : "null",
+        width: isMobile ? "250px" : "100%",
         height: isMobile & style ? "820px" : isMobile ? "470px" : "270px",
         backgroundColor: "#DBAB3C",
         display: "flex",
@@ -24,15 +24,15 @@ const Banner = ({ items, condition, style }) => {
       {/* banner design */}
       {!isMobile ? (
         <>
-          {/* left side design */}
+          {/* left side */}
           <div className="slanting1" />
           <div className="slanting2" />
           <div className="slanting3" />
 
-          {/* right side design */}
-          <div className="slanting4" />
-          <div className="slanting5" />
-          <div className="slanting6" />
+          {/* right side */}
+          <div className={isLarge ? "slanting-responsive4" : "slanting4"} />
+          <div className={isLarge ? "slanting-responsive5" : "slanting5"} />
+          <div className={isLarge ? "slanting-responsive6" : "slanting6"} />
         </>
       ) : null}
 

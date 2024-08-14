@@ -140,7 +140,7 @@ button:focus-visible {
   background-color: #000080;
   position: absolute;
   overflow: hidden;
-  margin-left: 82%;
+  margin-left: 82.2%;
   margin-bottom: 14.5%;
 }
 
@@ -154,13 +154,33 @@ button:focus-visible {
   transform-origin: top left;
 }
 
-.slanting5 {
-  height: 6px;
-  width: 224px;
+.slanting-responsive4 {
+  height: 50px;
+  width: 270px;
   background-color: #000080;
   position: absolute;
   overflow: hidden;
-  margin-left: 85%;
+  margin-left: 80.4%;
+  margin-bottom: 14.5%;
+}
+
+.slanting-responsive4:after {
+  height: 100%;
+  width: 100%;
+  background-color: #dbab3c;
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.slanting5 {
+  height: 6px;
+  width: 218px;
+  background-color: #000080;
+  position: absolute;
+  overflow: hidden;
+  margin-left: 85.6%;
   margin-bottom: 10%;
 }
 
@@ -173,17 +193,58 @@ button:focus-visible {
   transform: rotate(45deg);
   transform-origin: top left;
 }
+
+.slanting-responsive5 {
+  height: 6px;
+  width: 218px;
+  background-color: #000080;
+  position: absolute;
+  overflow: hidden;
+  margin-left: 84.2%;
+  margin-bottom: 10%;
+}
+
+.slanting-responsive5:after {
+  height: 100%;
+  width: 100%;
+  background-color: #dbab3c;
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
 .slanting6 {
   height: 12px;
   width: 205px;
   background-color: #000080;
   position: absolute;
   overflow: hidden;
-  margin-left: 86%;
+  margin-left: 86.5%;
   margin-bottom: 8%;
 }
 
 .slanting6:after {
+  height: 100%;
+  width: 100%;
+  background-color: #dbab3c;
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.slanting-responsive6 {
+  height: 12px;
+  width: 205px;
+  background-color: #000080;
+  position: absolute;
+  overflow: hidden;
+  margin-left: 85%;
+  margin-bottom: 8%;
+}
+
+.slanting-responsive6:after {
   height: 100%;
   width: 100%;
   background-color: #dbab3c;

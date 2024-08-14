@@ -59,7 +59,7 @@ const HowWeWorkComponent = () => {
         <iframe
           width={!isMobile ? "1069" : ""}
           height={!isMobile ? "470" : ""}
-          src="https://www.youtube.com/embed/IjlYXtI2-GU?si=Ey1RZ-tMQieM8XmP"
+          src="https://www.youtube.com/embed/m93Jw3vj42s?si=kUFCEfyeEXMcoDo-"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           style={{ borderRadius: "7px" }}

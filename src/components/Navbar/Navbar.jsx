@@ -202,11 +202,11 @@ const Navbar = () => {
             className="navbar-container2"
             sx={{ display: { xs: "none", sm: "flex", lg: "flex" } }}
           >
-            <Box className="nav-link">
+            {/* <Box className="nav-link">
               <Language />
               <Typography>ENG</Typography>
               <KeyboardArrowDown />
-            </Box>
+            </Box> */}
 
             <button className="button" onClick={() => navigate("/enquire-us")}>
               Enquire Now
@@ -214,12 +214,12 @@ const Navbar = () => {
           </Box>
 
           {/* mobile elements */}
-          <Box sx={{ display: { xs: "flex", sm: "none" } }}>
+          {/* <Box sx={{ display: { xs: "flex", sm: "none" } }}>
             <Box className="nav-link">
               <Typography>ENG</Typography>
               <KeyboardArrowDown />
             </Box>
-          </Box>
+          </Box> */}
         </Toolbar>
       </AppBar>
 
