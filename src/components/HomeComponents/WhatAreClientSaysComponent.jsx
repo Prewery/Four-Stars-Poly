@@ -26,7 +26,7 @@ const WhatAreClientSaysComponent = () => {
       {/* title */}
       <Box>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "173px",
             height: "12px",
@@ -36,7 +36,7 @@ const WhatAreClientSaysComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "614px" : "60px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

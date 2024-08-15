@@ -21,7 +21,7 @@ const QualityApprovalComponent = () => {
       {/* title */}
       <Box pt={5}>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "112px",
             height: "12px",
@@ -31,7 +31,7 @@ const QualityApprovalComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "640px" : "128px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

@@ -11,7 +11,7 @@ const OurOfficeComponent = () => {
       {/* title */}
       <Box mt={6}>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "90px",
             height: "12px",
@@ -21,7 +21,7 @@ const OurOfficeComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "682px" : "128px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

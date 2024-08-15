@@ -11,6 +11,7 @@ import { bannerItem1 } from "../../utils/BannerItem";
 const OurCompanyComponent = () => {
   const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px");
+  const isLarge = useMediaQuery("(max-width:1450px");
 
   const sliderSettings = {
     infinite: true,
@@ -51,7 +52,7 @@ const OurCompanyComponent = () => {
           }}
         >
           {/* rectangle box design */}
-          <Box
+          {/* <Box
             sx={{
               width: "83px",
               height: "12px",
@@ -60,7 +61,7 @@ const OurCompanyComponent = () => {
               zIndex: "-10",
               marginTop: "20px",
             }}
-          />
+          /> */}
 
           <Typography fontSize={24} fontWeight={700} color={"#000080"} ml={1.5}>
             Our Company

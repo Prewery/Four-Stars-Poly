@@ -15,7 +15,7 @@ const WhyChooseUsComponent = () => {
       {/* title */}
       <Box>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "83px",
             height: "12px",
@@ -25,7 +25,7 @@ const WhyChooseUsComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "652px" : "95px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

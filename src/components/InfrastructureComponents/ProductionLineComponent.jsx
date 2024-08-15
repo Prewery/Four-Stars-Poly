@@ -15,7 +15,7 @@ const ProductionLineComponent = () => {
       {/* title */}
       <Box>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "112px",
             height: "12px",
@@ -25,7 +25,7 @@ const ProductionLineComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "646px" : "128px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

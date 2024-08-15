@@ -30,7 +30,7 @@ const DirectorsDeskComponent = () => {
         }}
       >
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "90px",
             height: "12px",
@@ -40,7 +40,7 @@ const DirectorsDeskComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "190px" : "20px",
           }}
-        />
+        /> */}
 
         <Typography
           color={"#000080"}

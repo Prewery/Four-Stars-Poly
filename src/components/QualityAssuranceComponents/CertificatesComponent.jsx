@@ -19,7 +19,7 @@ const CertificatesComponent = ({ items }) => {
       {/* title */}
       <Box>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "90px",
             height: "12px",
@@ -29,7 +29,7 @@ const CertificatesComponent = ({ items }) => {
             marginTop: "50px",
             left: !isMobile ? "682px" : "128px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

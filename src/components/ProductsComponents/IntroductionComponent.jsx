@@ -19,7 +19,7 @@ const IntroductionComponent = ({ items, pics, condition, image }) => {
       {/* title */}
       <Box>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "90px",
             height: "12px",
@@ -29,7 +29,7 @@ const IntroductionComponent = ({ items, pics, condition, image }) => {
             marginTop: "20px",
             left: !isMobile ? "682px" : "128px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

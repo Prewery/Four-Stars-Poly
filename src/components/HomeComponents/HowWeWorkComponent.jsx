@@ -25,7 +25,7 @@ const HowWeWorkComponent = () => {
       {/* title */}
       <Box>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "83px",
             height: "12px",
@@ -35,7 +35,7 @@ const HowWeWorkComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "662px" : "110px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

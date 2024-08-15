@@ -20,7 +20,7 @@ const BoardOfDirectorsComponent = () => {
       {/* title */}
       <Box mt={6}>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "112px",
             height: "12px",
@@ -30,7 +30,7 @@ const BoardOfDirectorsComponent = () => {
             marginTop: "20px",
             left: !isMobile ? "630px" : "128px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}

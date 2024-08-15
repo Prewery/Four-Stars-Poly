@@ -16,7 +16,7 @@ const FeaturesComponent = ({ items }) => {
       {/* title */}
       <Box pt={6}>
         {/* rectangle box design */}
-        <Box
+        {/* <Box
           sx={{
             width: "162px",
             height: "12px",
@@ -25,7 +25,7 @@ const FeaturesComponent = ({ items }) => {
             marginTop: "20px",
             left: !isMobile ? "585px" : "30px",
           }}
-        />
+        /> */}
 
         <Typography
           textAlign={"center"}
